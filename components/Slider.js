@@ -68,7 +68,7 @@ class Slider extends Component {
     const slides = items.map((item) => {
       return (
         <CarouselItem onExiting={this.onExiting} onExited={this.onExited} key={item.src}>
-          <img src={item.src} alt={item.altText} />
+          <img className="d-block w-100" src={item.src} alt={item.altText} />
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
