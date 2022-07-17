@@ -4,6 +4,11 @@ import styles from '../styles/Home.module.css'
 
 import Slider from "../components/Slider.js"
 
+import armaflex from "../photos/armaflex.jpeg"
+
+import { Container, Row, Col } from 'reactstrap';
+
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -15,9 +20,11 @@ export default function Home() {
 
 
 
-      <div>
-        <Slider/>
-      </div>
+      <Row>
+        <Slider />
+      </Row>
+
+      {/* <Image src={armaflex} layout="responsive" height="1000" width="" alt="green" /> */}
 
 
 
