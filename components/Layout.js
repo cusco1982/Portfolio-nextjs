@@ -1,5 +1,5 @@
 import Toolbar from './Toolbar.js'
-// import Footer from './Footer'
+import Footer from './Footer.js'
 import styles from '../styles/Layout.module.css'
 
 const Layout = ({ children }) => {
@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
 
             </div>
 
-            {/* <Footer /> */}
+            <Footer />
 
 
         </>
