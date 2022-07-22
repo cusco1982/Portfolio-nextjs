@@ -14,7 +14,7 @@ import roofpiping from "../photos/roofpiping.jpeg";
 
 const items = [
   {
-    src: "http://cdn.coverstand.com/11092/688194/article_assets/dd7d7f376c6c1e9f7cee5a3cc7a42276266cfde4.jpg",
+    src: "https://www.snipsmag.com/ext/resources/issues/2017/June/insulation/Ductwork-feature.jpg?t=1495559906&width=900",
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
