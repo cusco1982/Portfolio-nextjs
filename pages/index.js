@@ -4,8 +4,10 @@ import styles from '../styles/Home.module.css'
 import React, { useEffect } from 'react';
 
 import Slider from "../components/Slider.js"
+import Jumbotron from "../components/Jumbotron.js"
 
 import armaflex from "../photos/armaflex.jpeg"
+import verticalpicture from "../photos/IMG_2315.JPG"
 
 import { Container, Row, Col } from 'reactstrap';
 
@@ -49,12 +51,87 @@ export default function Home() {
 
 
 
-      <Row>
-        <Slider />
+      <Row className={styles.jumboBackground} style={{ height: "60vh", backgroundColor: "black", textAlign: "center" }}>
+        {/* <Slider /> */}
+        {/* <Jumbotron/> */}
+
+
+        <div style={{ margin: "auto", color:"white" }}>
+
+          <h1 style={{ backgroundColor: "", padding:"20px" }}>#1 Mechanical Insulation Service</h1>
+          <div style={{borderTop:"1px solid #4db2ec", width:"10%", padding:"10px", margin:"auto"}}></div>
+          <p style={{ backgroundColor: "", padding:"20px" }}>We believe that the satisfaction and safety of our <br/> customers is our #1 Priority.</p>
+          <button style={{ backgroundColor: "#4db2ec", padding:"10px" }}>GET A QUOTE</button>
+          
+        </div>
+
+
+
+
+
+
+
       </Row>
 
-      {/* <Image src={armaflex} layout="responsive" height="1000" width="" alt="green" /> */}
 
+
+
+
+
+
+      {/* ----------------------------------------------------------------------------------------------------------------------- */}
+
+
+      <Row style={{ backgroundColor: "indigo", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center" }}>
+
+
+
+
+
+        <Col lg="4" style={{ backgroundColor: "red", display: "", padding: "0", margin: "0" }}>
+
+
+          <h1 style={{ backgroundColor: "orange", padding: "40px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h1>
+
+          <p style={{ padding: "40px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numquam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
+
+
+
+        </Col>
+
+
+
+        <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px" }}>
+
+          <Image src={verticalpicture} layout="responsive" height="1000px" width="" alt="green" />
+
+
+        </Col>
+
+
+
+
+
+      </Row>
+
+
+
+      {/* ----------------------------------------------------------------------------------------------------------------------- */}
+
+
+
+      <Row style={{ backgroundColor: "indigo", height: "", padding: "0", justifyContent: "center", marginBottom: "40px" }}>
+        <Col lg="7">
+
+          <Row style={{ height: "", padding: "0", justifyContent: "center" }}>
+            <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>HIGH QUALITY</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
+            <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>TRUSTED COMPANY</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
+            <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>EXPERIENCED WORKERS</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
+          </Row>
+
+        </Col>
+
+      </Row>
 
 
 
@@ -65,29 +142,28 @@ export default function Home() {
       <Row style={{ backgroundColor: "indigo", height: "", padding: "0", margin: "0" }}>
 
 
-        <Row style={{ backgroundColor: "black", padding: "0", margin: "0", height: "20vh" }}>
-          <Col style={{ backgroundColor: "red", display: "flex", alignItems: "center", padding: "0", margin: "0" }}><h1 style={{ backgroundColor: "orange", margin: "auto" }}>MECHANICAL INSULATION SOLUTIONS</h1></Col>
-          <Col style={{ backgroundColor: "blue", padding: "0", margin: "0", display: "flex", alignItems: "center" }}><p style={{ backgroundColor: "orange", margin: "0", padding: "5px", fontSize: "20px", lineHeight: "45px", width: "80%" }}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, suscipit. sit amet consectetur sit amet adipisicing elit. Laudantium, suscipit. sit amet consectetur elit.</p></Col>
-        </Row>
+        <Col lg="10" style={{ marginLeft: "auto", marginRight: "auto", backgroundColor: "" }}>
 
-        <Row style={{ backgroundColor: "white", padding: "0", margin: "0" }}>
-          <Col lg="10" style={{ marginLeft: "auto", marginRight: "auto", backgroundColor: "" }}>
-            <Row>
-              <Col style={{ backgroundColor: "orange" }}>
-                <Row style={{ backgroundColor: "pink", textAlign: "center" }}><h1>hello</h1></Row>
-                <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
-              </Col>
-              <Col style={{ backgroundColor: "blue" }}>
-                <Row style={{ backgroundColor: "grey", textAlign: "center" }}><h1>hello</h1></Row>
-                <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
-              </Col>
-              <Col style={{ backgroundColor: "black" }}>
-                <Row style={{ backgroundColor: "pink", textAlign: "center" }}><h1>hello</h1></Row>
-                <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+          <Row>
+
+            <Col style={{ backgroundColor: "orange" }}>
+              <Row style={{ backgroundColor: "pink", textAlign: "center" }}><h1>hello</h1></Row>
+              <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
+            </Col>
+
+            <Col style={{ backgroundColor: "blue" }}>
+              <Row style={{ backgroundColor: "grey", textAlign: "center" }}><h1>hello</h1></Row>
+              <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
+            </Col>
+
+            <Col style={{ backgroundColor: "black" }}>
+              <Row style={{ backgroundColor: "pink", textAlign: "center" }}><h1>hello</h1></Row>
+              <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
+            </Col>
+
+          </Row>
+
+        </Col>
 
 
       </Row>

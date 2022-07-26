@@ -34,6 +34,8 @@ export default class Toolbar extends React.Component {
           <NavbarBrand href="/">WJ Best Insulation</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
+
+
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="/">Home</NavLink>
