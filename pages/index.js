@@ -61,7 +61,7 @@ export default function Home() {
           <h1 style={{ backgroundColor: "", padding:"20px" }}>#1 Mechanical Insulation Service</h1>
           <div style={{borderTop:"1px solid #4db2ec", width:"10%", padding:"10px", margin:"auto"}}></div>
           <p style={{ backgroundColor: "", padding:"20px" }}>We believe that the satisfaction and safety of our <br/> customers is our #1 Priority.</p>
-          <button style={{ backgroundColor: "#4db2ec", padding:"10px" }}>GET A QUOTE</button>
+          <button style={{ backgroundColor: "#4db2ec", padding:"20px" }}>GET A QUOTE</button>
           
         </div>
 
@@ -103,7 +103,7 @@ export default function Home() {
 
         <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px" }}>
 
-          <Image src={verticalpicture} layout="responsive" height="1000px" width="" alt="green" />
+          <Image src={verticalpicture} layout="responsive" height="1500px" width="" alt="green" />
 
 
         </Col>
