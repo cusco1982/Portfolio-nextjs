@@ -82,18 +82,20 @@ export default function Home() {
       {/* ----------------------------------------------------------------------------------------------------------------------- */}
 
 
-      <Row style={{ backgroundColor: "indigo", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center" }}>
+      <Row style={{ backgroundColor: "", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center" }}>
 
 
 
 
 
-        <Col lg="4" style={{ backgroundColor: "red", display: "", padding: "0", margin: "0" }}>
+        <Col lg="4" style={{ backgroundColor: "", display: "", padding: "0", margin: "0" }}>
 
+          <h2 style={{padding:""}}><button>About Us</button></h2>
 
-          <h1 style={{ backgroundColor: "orange", padding: "40px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h1>
+          <h1 style={{ backgroundColor: "", paddingTop: "40px", paddingBottom: "40px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h1>
 
-          <p style={{ padding: "40px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numquam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
+          <p style={{ backgroundColor: "white", paddingTop: "40px", paddingBottom: "40px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numquam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
+
 
 
 
@@ -103,7 +105,7 @@ export default function Home() {
 
         <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px" }}>
 
-          <Image src={verticalpicture} layout="responsive" height="1500px" width="" alt="green" />
+          <Image style={{paddingLeft:"40px", paddingRight:"40px"}} src={verticalpicture} layout="responsive" height="1400px" width="" alt="green" />
 
 
         </Col>
