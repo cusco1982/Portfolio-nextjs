@@ -30,7 +30,7 @@ export default class Toolbar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md" style={{height:"10vh"}}>
+        <Navbar fixed="top" color="light" light expand="md" style={{height:"10vh"}}>
           <NavbarBrand href="/">WJ Best Insulation</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
