@@ -56,13 +56,13 @@ export default function Home() {
         {/* <Jumbotron/> */}
 
 
-        <div style={{ margin: "auto", color:"white" }}>
+        <div style={{ margin: "auto", color: "white" }}>
 
-          <h1 style={{ backgroundColor: "", padding:"20px" }}>#1 Mechanical Insulation Service</h1>
-          <div style={{borderTop:"1px solid #4db2ec", width:"10%", padding:"10px", margin:"auto"}}></div>
-          <p style={{ backgroundColor: "", padding:"20px" }}>We believe that the satisfaction and safety of our <br/> customers is our #1 Priority.</p>
-          <button style={{ backgroundColor: "#4db2ec", padding:"20px" }}>GET A QUOTE</button>
-          
+          <h1 style={{ backgroundColor: "", padding: "20px" }}>#1 Mechanical Insulation Service</h1>
+          <div style={{ borderTop: "1px solid #4db2ec", width: "10%", padding: "10px", margin: "auto" }}></div>
+          <p style={{ backgroundColor: "", padding: "20px" }}>We believe that the satisfaction and safety of our <br /> customers is our #1 Priority.</p>
+          <button style={{ backgroundColor: "#4db2ec", padding: "20px" }}>GET A QUOTE</button>
+
         </div>
 
 
@@ -79,7 +79,7 @@ export default function Home() {
 
 
 
-      {/* ----------------------------------------------------------------------------------------------------------------------- */}
+      {/* intro --------------------------------------------------------------------------------------------------------------------- */}
 
 
       <Row style={{ backgroundColor: "", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center" }}>
@@ -90,22 +90,32 @@ export default function Home() {
 
         <Col lg="4" style={{ backgroundColor: "", display: "", padding: "0", margin: "0" }}>
 
-          <h2 style={{padding:""}}><button>About Us</button></h2>
+          <h2 style={{ padding: "" }}><button style={{ backgroundColor: "orange" }}>About Us</button></h2>
 
-          <h1 style={{ backgroundColor: "", paddingTop: "40px", paddingBottom: "40px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h1>
+          <h1 style={{ backgroundColor: "", paddingTop: "40px", paddingBottom: "40px", color: 'blue' }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h1>
 
           <p style={{ backgroundColor: "white", paddingTop: "40px", paddingBottom: "40px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numquam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
 
+          <div style={{ display: 'flex', backgroundColor: "", padding: "10px" }}>
 
+            <Col>
+              <h1 style={{ color: "orange" }}>454 m</h1>
+              <div style={{ color: "blue" }}>Delivery Packages</div>
+            </Col>
 
+            <Col>
+              <h1 style={{ color: "orange" }}>127</h1>
+              <div style={{ color: "blue" }}>Countries Covered</div>
+            </Col>
 
+          </div>
         </Col>
 
 
 
         <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px" }}>
 
-          <Image style={{paddingLeft:"40px", paddingRight:"40px"}} src={verticalpicture} layout="responsive" height="1400px" width="" alt="green" />
+          <Image style={{ paddingLeft: "40px", paddingRight: "40px" }} src={verticalpicture} layout="responsive" height="1400px" width="" alt="green" />
 
 
         </Col>
@@ -118,65 +128,42 @@ export default function Home() {
 
 
 
-      {/* ----------------------------------------------------------------------------------------------------------------------- */}
-
-
-
-      <Row style={{ backgroundColor: "indigo", height: "", padding: "0", justifyContent: "center", marginBottom: "40px" }}>
+      {/* 3 paragraph row----------------------------------------------------------------------------------------------------------------------- */}
+      {/* <Row style={{ backgroundColor: "indigo", height: "", padding: "0", justifyContent: "center", marginBottom: "40px" }}>
         <Col lg="7">
-
           <Row style={{ height: "", padding: "0", justifyContent: "center" }}>
             <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>HIGH QUALITY</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
             <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>TRUSTED COMPANY</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
             <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>EXPERIENCED WORKERS</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
           </Row>
-
         </Col>
-
-      </Row>
-
+      </Row> */}
 
 
 
-      {/* ----------------------------------------------------------------------------------------------------------------------- */}
 
-
-      <Row style={{ backgroundColor: "indigo", height: "", padding: "0", margin: "0" }}>
-
-
+      {/* 3 image row ----------------------------------------------------------------------------------------------------------------------- */}
+      {/* <Row style={{ backgroundColor: "indigo", height: "", padding: "0", margin: "0" }}>
         <Col lg="10" style={{ marginLeft: "auto", marginRight: "auto", backgroundColor: "" }}>
-
           <Row>
-
             <Col style={{ backgroundColor: "orange" }}>
               <Row style={{ backgroundColor: "pink", textAlign: "center" }}><h1>hello</h1></Row>
               <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
             </Col>
-
             <Col style={{ backgroundColor: "blue" }}>
               <Row style={{ backgroundColor: "grey", textAlign: "center" }}><h1>hello</h1></Row>
               <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
             </Col>
-
             <Col style={{ backgroundColor: "black" }}>
               <Row style={{ backgroundColor: "pink", textAlign: "center" }}><h1>hello</h1></Row>
               <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
             </Col>
-
           </Row>
-
         </Col>
+      </Row> */}
 
 
-      </Row>
-
-
-      {/* ----------------------------------------------------------------------------------------------------------------------- */}
-
-
-
-
-
+      {/* About Us backgroundimg----------------------------------------------------------------------------------------------------------------------- */}
       <Row className={styles.counterBackground}>
 
         <Col lg="10" style={{ margin: "auto", padding: "0" }}>
@@ -198,39 +185,23 @@ export default function Home() {
 
 
               <Col style={{ backgroundColor: "", padding: "0", margin: "0" }}>
-                <Row id="num" data-value="26" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>
-                  0
-        </Row>
-                <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>
-                  Years on the Market
-        </Row>
+                <Row id="num" data-value="26" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
+                <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>Years on the Market</Row>
               </Col>
 
               <Col style={{ backgroundColor: "", padding: "0", margin: "0" }}>
-                <Row id="num" data-value="4" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>
-                  0
-        </Row>
-                <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", margin: "0", color: "white", fontWeight: "800", lineHeight: "2" }}>
-                  Operational Brigades
-        </Row>
+                <Row id="num" data-value="4" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
+                <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", margin: "0", color: "white", fontWeight: "800", lineHeight: "2" }}>Operational Brigades</Row>
               </Col>
 
               <Col style={{ backgroundColor: "", padding: "0", margin: "0" }}>
-                <Row id="num" data-value="378" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>
-                  0
-        </Row>
-                <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>
-                  Units Engineering
-        </Row>
+                <Row id="num" data-value="378" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
+                <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>Units Engineering</Row>
               </Col>
 
               <Col style={{ backgroundColor: "", padding: "0", margin: "0" }}>
-                <Row id="num" data-value="400" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>
-                  0
-        </Row>
-                <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>
-                  Employees of the company
-        </Row>
+                <Row id="num" data-value="400" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
+                <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>Employees of the company</Row>
               </Col>
 
 
@@ -254,50 +225,11 @@ export default function Home() {
 
       </Row>
 
-
-
+      
+      
       {/* ----------------------------------------------------------------------------------------------------------------------- */}
 
 
-      {/*-------------------------- what we offer our clients 3 */}
-      <Row style={{ backgroundColor: "orange", height: "calc(100vh - 160px)", padding: "0", margin: "0" }}>
-
-
-        <header style={{ display: "", backgroundColor: "green", textAlign: "center", paddingTop: "90px", paddingBottom: "300px" }}>
-          {/* Mechanical Insulation Solutions */}
-
-
-          <h1 style={{ fontSize: "60px", letterSpacing: "1.5px" }}>What we offer to our clients</h1>
-
-          <p style={{ fontSize: "20px", padding: "20px" }}>Lorem ipsum dolor sit amet consectetur, adipisicing. Doloremque, officia.</p>
-
-
-
-
-        </header>
-
-
-
-
-
-        {/*------- 3 images ------*/}
-        <div style={{ backgroundColor: "blue" }}>
-
-          <Row>
-            <Col>
-              <Image src={armaflex} layout="responsive" height="700" width="" alt="green" />
-            </Col>
-            <Col>
-              <Image src={armaflex} layout="responsive" height="700" width="" alt="green" />
-            </Col>
-            <Col>
-              <Image src={armaflex} layout="responsive" height="700" width="" alt="green" />
-            </Col>
-
-          </Row>
-
-
-        </div>
 
 
 
@@ -305,54 +237,39 @@ export default function Home() {
 
 
 
-
-      </Row>
-
-
-
-
-
-      {/*-------------------------- services */}
-      <div style={{ paddingBottom: "100px" }}>
-
+      {/* services 6img grid ------------------------------------------------------------------------------ */}
+      {/* <div style={{ paddingBottom: "100px" }}>
         <Col style={{ borderTop: "1px solid grey", height: "40vh", paddingTop: "60px", paddingBottom: "60px", backgroundColor: "white" }}>
-
           <Row style={{ backgroundColor: "", width: "80%", margin: "auto", height: "50%" }}>
             <Col style={{ display: "flex" }}>
               <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
               <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Abatement</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
-
             <Col style={{ display: "flex" }}>
               <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
               <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Re-Insulation</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
-
             <Col style={{ display: "flex" }}>
               <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
               <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Demolition</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
           </Row>
-
           <Row style={{ backgroundColor: "", width: "80%", margin: "auto", height: "50%" }}>
             <Col style={{ display: "flex" }}>
               <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
               <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Construction</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
-
             <Col style={{ display: "flex" }}>
               <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
               <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Carting</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
-
             <Col style={{ display: "flex" }}>
               <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
               <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Consulting</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
           </Row>
-
         </Col>
-      </div>
+      </div> */}
 
 
 
@@ -360,22 +277,8 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/*-------------------------------2 images */}
-      <div className="image-row">
+      {/* 2 images hover-------------------------------------------------- */}
+      {/* <div className="image-row">
         <a href="/projects">
           <div className={styles.container}>
             <img style={{ width: "100%", height: "100%", padding: "20px" }} src="https://d3cl79h6n1fe0x.cloudfront.net/wp-content/uploads/2020/01/15085115/11.jpeg" alt="" />
@@ -418,11 +321,13 @@ export default function Home() {
             </div>
           </div>
         </a>
-      </div>
+      </div> */}
 
 
-      {/* image description */}
-      <div className="image-description" style={{ paddingTop: "2%", backgroundColor: "whitesmoke" }}>
+
+
+      {/* image description ------------------------*/}
+      {/* <div className="image-description" style={{ paddingTop: "2%", backgroundColor: "whitesmoke" }}>
         <a href="/projects">
           <div className={styles.container} style={{ paddingLeft: "20px", paddingRight: "20px" }}>
             <h1 style={{ paddingBottom: "15px" }}>Port Everglades Southport Turning Notch</h1>
@@ -445,21 +350,13 @@ export default function Home() {
             <div className={styles.colorborder} style={{ width: "100%", borderBottom: "2px solid black" }}></div>
           </div>
         </a>
-      </div>
+      </div> */}
 
 
 
 
-
-
-
-
-
-
-
-      {/*-------------------------- markets we serve */}
-      <div style={{ backgroundColor: "whitesmoke", display: "flex", height: "", paddingTop: "80px", paddingBottom: "80px" }}>
-
+      {/* markets we serve------------------------------------------------------------------------- */}
+      {/* <div style={{ backgroundColor: "whitesmoke", display: "flex", height: "", paddingTop: "80px", paddingBottom: "80px" }}>
         <Col xs="4" sm="4" md="4" lg="4" xl="4" xxl="4" className={styles.left} style={{ backgroundColor: "", marginLeft: "auto", padding: "25px" }}>
           <div style={{ backgroundColor: "", height: "100%" }}>
             <h1 style={{ color: "blue" }}>Markets we serve</h1>
@@ -468,14 +365,11 @@ export default function Home() {
             <br />
             <br />
             <p style={{ color: "blue" }}>Learn more --></p>
-
           </div>
         </Col>
-
         <Col xs="4" sm="4" md="4" lg="4" xl="4" xxl="4" className={styles.right} style={{ backgroundColor: "", marginRight: "auto" }}>
           <div style={{ backgroundColor: "", height: "100%" }}>
             <h1 style={{ color: "blue" }}>Our expertise</h1>
-
             <br />
             <p style={{ fontSize: "30px", width: "60%" }}>Keller is able to tap into a wealth of experience, and using proven, best practice methods offer a wide range of...</p>
             <br />
@@ -483,8 +377,7 @@ export default function Home() {
             <p style={{ color: "blue" }}>Learn more --></p>
           </div>
         </Col>
-
-      </div>
+      </div> */}
 
 
 
