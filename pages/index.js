@@ -7,6 +7,7 @@ import Slider from "../components/Slider.js"
 import Jumbotron from "../components/Jumbotron.js"
 
 import armaflex from "../photos/armaflex.jpeg"
+import ducticon from "../photos/ducticon.png"
 import verticalpicture from "../photos/IMG_2315.JPG"
 
 import { Container, Row, Col } from 'reactstrap';
@@ -142,6 +143,86 @@ export default function Home() {
 
 
 
+      <Row style={{ backgroundColor: "", paddingTop: "40px", marginTop: "0px", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
+        <Col>
+
+        <h1 style={{paddingBottom:"10px"}}>SERVICES</h1>
+        <div>We are committed to projects done effectively, efficiently, safely, and on schedule for the most reasonable price.</div>
+        
+        </Col>
+      </Row>
+
+      {/* services 6img grid ------------------------------------------------------------------------------ */}
+      <div style={{ paddingBottom: "", backgroundColor: "orange" }}>
+
+
+
+
+        <Col lg="8" style={{ height: "40vh", paddingTop: "60px", paddingBottom: "60px", backgroundColor: "", margin: "auto" }}>
+
+          <Row style={{ backgroundColor: "", width: "", margin: "auto", height: "50%" }}>
+
+            <Col style={{ display: "flex", backgroundColor: "red" }}>
+              <Col lg="3" style={{ backgroundColor: "white", margin: "auto", textAlign: "" }}><Image style={{ backgroundColor: "blue" }} src={ducticon} alt="safety" width={100} height={100} /></Col>
+              <Col style={{ backgroundColor: "pink", margin: "auto" }}><h1>HVAC Duct</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
+            </Col>
+
+            <Col style={{ display: "flex", backgroundColor: "green" }}>
+              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
+              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Chilled-water Piping</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
+            </Col>
+
+            <Col style={{ display: "flex", backgroundColor: "red" }}>
+              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
+              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Tanks</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
+            </Col>
+
+          </Row>
+
+
+          <Row style={{ backgroundColor: "", width: "", margin: "auto", height: "50%" }}>
+            <Col style={{ display: "flex", backgroundColor: "green" }}>
+              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
+              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Abatement</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
+            </Col>
+            <Col style={{ display: "flex", backgroundColor: "red" }}>
+              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
+              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Plumbing Piping</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
+            </Col>
+            <Col style={{ display: "flex", backgroundColor: "green" }}>
+              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "center" }}>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+  <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+</svg>
+
+              </Col>
+              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Consulting</h1><p style={{ fontSize: "20px" }}>Leverage 32 years of experience across project design and compliance.</p></Col>
+            </Col>
+          </Row>
+
+        </Col>
+
+
+      </div>
+
+
+      <Row style={{ backgroundColor: "", paddingBottom: "40px", marginTop: "0px", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
+        <Col>FOLLOW US ON INSTAGRAM @INSTAGRAM.COM/WJBESTINSULATION</Col>
+      </Row>
+
+
+
+
+
+
+
+
+
+
+
       {/* 3 image row ----------------------------------------------------------------------------------------------------------------------- */}
       {/* <Row style={{ backgroundColor: "indigo", height: "", padding: "0", margin: "0" }}>
         <Col lg="10" style={{ marginLeft: "auto", marginRight: "auto", backgroundColor: "" }}>
@@ -225,8 +306,8 @@ export default function Home() {
 
       </Row>
 
-      
-      
+
+
       {/* ----------------------------------------------------------------------------------------------------------------------- */}
 
 
@@ -237,39 +318,6 @@ export default function Home() {
 
 
 
-      {/* services 6img grid ------------------------------------------------------------------------------ */}
-      {/* <div style={{ paddingBottom: "100px" }}>
-        <Col style={{ borderTop: "1px solid grey", height: "40vh", paddingTop: "60px", paddingBottom: "60px", backgroundColor: "white" }}>
-          <Row style={{ backgroundColor: "", width: "80%", margin: "auto", height: "50%" }}>
-            <Col style={{ display: "flex" }}>
-              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
-              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Abatement</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
-            </Col>
-            <Col style={{ display: "flex" }}>
-              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
-              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Re-Insulation</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
-            </Col>
-            <Col style={{ display: "flex" }}>
-              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
-              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Demolition</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
-            </Col>
-          </Row>
-          <Row style={{ backgroundColor: "", width: "80%", margin: "auto", height: "50%" }}>
-            <Col style={{ display: "flex" }}>
-              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
-              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Construction</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
-            </Col>
-            <Col style={{ display: "flex" }}>
-              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
-              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Carting</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
-            </Col>
-            <Col style={{ display: "flex" }}>
-              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={armaflex} alt="safety" width={100} height={100} /></Col>
-              <Col style={{ backgroundColor: "", margin: "auto" }}><h1>Consulting</h1><p style={{ fontSize: "20px" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
-            </Col>
-          </Row>
-        </Col>
-      </div> */}
 
 
 
