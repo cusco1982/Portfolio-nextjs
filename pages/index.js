@@ -16,7 +16,9 @@ import waterproof from "../photos/waterproof.png"
 import verticalpicture from "../photos/IMG_2315.JPG"
 
 import { Container, Row, Col } from 'reactstrap';
+// import Multicarousel from '../components/multiCarousel';
 
+import verticalDuct from "../photos/verticalDuct.JPG"
 
 export default function Home() {
 
@@ -178,7 +180,7 @@ export default function Home() {
             </Col>
 
             <Col style={{ display: "flex", backgroundColor: "red" }}>
-              <Col lg="3" style={{ backgroundColor: "blue", margin: "auto", textAlign: "center" }}><Image src={tank} alt="safety" width={80} height={80} /></Col>
+              <Col lg="3" style={{ backgroundColor: "blue", margin: "", textAlign: "" }}><Image src={tank} alt="safety" width={80} height={80} /></Col>
               <Col style={{ backgroundColor: "", margin: "" }}><h2>Tanks</h2><p style={{ fontSize: "" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
 
@@ -200,7 +202,7 @@ export default function Home() {
               <Col style={{ backgroundColor: "", margin: "auto" }}>
 
                 <h2>Outdoor Piping</h2>
-                
+
                 {/* <p style={{ fontSize: "" }}></p> */}
 
                 <ul>
@@ -209,7 +211,7 @@ export default function Home() {
                   <li>jacketing</li>
 
                 </ul>
-                
+
               </Col>
 
             </Col>
@@ -259,6 +261,61 @@ export default function Home() {
           </Row>
         </Col>
       </Row> */}
+
+
+      <Row>
+
+        {/* <Multicarousel /> */}
+
+
+        <Row style={{ backgroundColor: "red", height: "", position: "", padding:"0" }}>
+          <Col style={{padding:"0"}}><Image src={verticalDuct} height={100} width={100} layout="responsive" /></Col>
+          <Col style={{padding:"0"}}><Image src={verticalDuct} height={100} width={100} layout="responsive" /></Col>
+          <Col style={{padding:"0"}}><Image src={verticalDuct} height={100} width={100} layout="responsive" /></Col>
+
+
+        </Row>
+
+        <Row style={{ height: "600px" }}>
+
+          <Col lg="7" style={{ backgroundColor: "orange" }}>
+            <Row>
+              <Col><div>800</div><div>Finished Projects</div></Col>
+              <Col><div>800</div><div>Finished Projects</div></Col>
+            </Row>
+            <Row>
+              <Col><div>800</div><div>Finished Projects</div></Col>
+              <Col><div>800</div><div>Finished Projects</div></Col>
+            </Row>
+
+          </Col>
+
+
+          <Col style={{ backgroundColor: "blue", position: "relative" }}>
+            <Image src={armaflex} alt="safety" layout="fill" />
+          </Col>
+
+
+
+        </Row>
+
+
+      </Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       {/* About Us backgroundimg----------------------------------------------------------------------------------------------------------------------- */}
