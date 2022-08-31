@@ -13,12 +13,17 @@ import safetyicon from "../photos/safety.png"
 import mask from "../photos/mask.png"
 import insulationicon from "../photos/insulation.png"
 import waterproof from "../photos/waterproof.png"
+
 import verticalpicture from "../photos/IMG_2315.JPG"
+import verticalDuct from "../photos/vertical/verticalDuct.JPG"
+import pipingHall from "../photos/vertical/pipingHallway.JPG"
+// import verticalSmallTank from "../photos/vertical/verticalSmallTank.jpg"
+import verticalTank from "../photos/vertical/verticalTanks.JPG"
+
 
 import { Container, Row, Col } from 'reactstrap';
-// import Multicarousel from '../components/multiCarousel';
 
-import verticalDuct from "../photos/verticalDuct.JPG"
+
 
 export default function Home() {
 
@@ -136,20 +141,6 @@ export default function Home() {
 
 
 
-      {/* 3 paragraph row----------------------------------------------------------------------------------------------------------------------- */}
-      {/* <Row style={{ backgroundColor: "indigo", height: "", padding: "0", justifyContent: "center", marginBottom: "40px" }}>
-        <Col lg="7">
-          <Row style={{ height: "", padding: "0", justifyContent: "center" }}>
-            <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>HIGH QUALITY</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
-            <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>TRUSTED COMPANY</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
-            <Col style={{ backgroundColor: "red" }} ><div style={{ display: "flex" }}><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16"><path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" /></svg><h3 style={{ paddingLeft: "20px" }}>EXPERIENCED WORKERS</h3></div><p>Lorem ipsum dolor sit amet. Quo hic sequi necessitatibus, perspiciatis cum deserunt repellendus aliquam eius nobis praesentium.</p></Col>
-          </Row>
-        </Col>
-      </Row> */}
-
-
-
-
       <Row style={{ backgroundColor: "", paddingTop: "40px", marginTop: "0px", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
         <Col>
 
@@ -158,6 +149,8 @@ export default function Home() {
 
         </Col>
       </Row>
+
+
 
       {/* services 6img grid ------------------------------------------------------------------------------ */}
       <div style={{ paddingBottom: "", backgroundColor: "orange" }}>
@@ -235,64 +228,39 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-      {/* 3 image row ----------------------------------------------------------------------------------------------------------------------- */}
-      {/* <Row style={{ backgroundColor: "indigo", height: "", padding: "0", margin: "0" }}>
-        <Col lg="10" style={{ marginLeft: "auto", marginRight: "auto", backgroundColor: "" }}>
-          <Row>
-            <Col style={{ backgroundColor: "orange" }}>
-              <Row style={{ backgroundColor: "pink", textAlign: "center" }}><h1>hello</h1></Row>
-              <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
-            </Col>
-            <Col style={{ backgroundColor: "blue" }}>
-              <Row style={{ backgroundColor: "grey", textAlign: "center" }}><h1>hello</h1></Row>
-              <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
-            </Col>
-            <Col style={{ backgroundColor: "black" }}>
-              <Row style={{ backgroundColor: "pink", textAlign: "center" }}><h1>hello</h1></Row>
-              <Row style={{ padding: "35px" }}><Image src={armaflex} layout="" height="" width="" alt="green" /></Row>
-            </Col>
-          </Row>
-        </Col>
-      </Row> */}
-
+      {/* gallery ------------------------------------------------------------------------------------------------------------ */}
 
       <Row>
 
-        {/* <Multicarousel /> */}
 
 
-        <Row style={{ backgroundColor: "red", height: "", position: "", padding:"0" }}>
-          <Col style={{padding:"0"}}><Image src={verticalDuct} height={100} width={100} layout="responsive" /></Col>
-          <Col style={{padding:"0"}}><Image src={verticalDuct} height={100} width={100} layout="responsive" /></Col>
-          <Col style={{padding:"0"}}><Image src={verticalDuct} height={100} width={100} layout="responsive" /></Col>
+
+        {/* 
+// import verticalSmallTank from "../photos/vertical/verticalSmallTank.jpg"
+import verticalTank from "../photos/vertical/verticalTanks.JPG" */}
+        {/* verticalDuct
+pipingHall
+verticalpicture */}
+
+        <Row style={{ height: "", paddingLeft: "50px",paddingRight:"50px", marginTop: "30px", marginBottom:"100px",marginLeft:"0px",marginRight:"0px", backgroundColor:"green" }}>
 
 
-        </Row>
-
-        <Row style={{ height: "600px" }}>
-
-          <Col lg="7" style={{ backgroundColor: "orange" }}>
-            <Row>
-              <Col><div>800</div><div>Finished Projects</div></Col>
-              <Col><div>800</div><div>Finished Projects</div></Col>
-            </Row>
-            <Row>
-              <Col><div>800</div><div>Finished Projects</div></Col>
-              <Col><div>800</div><div>Finished Projects</div></Col>
-            </Row>
-
+          <Col style={{ backgroundColor: "blue" }}>
+            <Slider />
           </Col>
 
 
-          <Col style={{ backgroundColor: "blue", position: "relative" }}>
-            <Image src={armaflex} alt="safety" layout="fill" />
+
+          <Col lg="7" style={{ backgroundColor: "orange", padding: "70px" }}>
+            <Row className="h-50">
+              <Col style={{ backgroundColor: "red" }}><h1>800</h1><h4>Finished Projects</h4></Col>
+              <Col style={{ backgroundColor: "blue" }}><h1>800</h1><h4>Finished Projects</h4></Col>
+            </Row>
+            <Row className="h-50">
+              <Col style={{ backgroundColor: "blue" }}><h1>800</h1><h4>Finished Projects</h4></Col>
+              <Col style={{ backgroundColor: "red" }}><h1>800</h1><h4>Finished Projects</h4></Col>
+            </Row>
+
           </Col>
 
 
@@ -382,145 +350,17 @@ export default function Home() {
 
 
 
+
+
+
+
+
+
+
+
+
+
       {/* ----------------------------------------------------------------------------------------------------------------------- */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* 2 images hover-------------------------------------------------- */}
-      {/* <div className="image-row">
-        <a href="/projects">
-          <div className={styles.container}>
-            <img style={{ width: "100%", height: "100%", padding: "20px" }} src="https://d3cl79h6n1fe0x.cloudfront.net/wp-content/uploads/2020/01/15085115/11.jpeg" alt="" />
-            <div className={styles.overlay}>
-              <div className={styles.text}>
-                <div>
-                  <h1>Solutions</h1>
-                  <p>Heavy foundations</p>
-                </div>
-                <div>
-                  <h1>Markets</h1>
-                  <p>Institutional/Sports entertainment</p>
-                </div>
-                <div>
-                  <h1>Techniques</h1>
-                  <p>Drilled shafts</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="/projects">
-          <div className={styles.container}>
-            <img style={{ width: "100%", height: "100%", padding: "20px" }} src="https://d3cl79h6n1fe0x.cloudfront.net/wp-content/uploads/2020/01/15085115/11.jpeg" alt="" />
-            <div className={styles.overlay}>
-              <div className={styles.text}>
-                <div>
-                  <h1>Solutions</h1>
-                  <p>Heavy foundations</p>
-                </div>
-                <div>
-                  <h1>Markets</h1>
-                  <p>Institutional/Sports entertainment</p>
-                </div>
-                <div>
-                  <h1>Techniques</h1>
-                  <p>Drilled shafts</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div> */}
-
-
-
-
-      {/* image description ------------------------*/}
-      {/* <div className="image-description" style={{ paddingTop: "2%", backgroundColor: "whitesmoke" }}>
-        <a href="/projects">
-          <div className={styles.container} style={{ paddingLeft: "20px", paddingRight: "20px" }}>
-            <h1 style={{ paddingBottom: "15px" }}>Port Everglades Southport Turning Notch</h1>
-            <text style={{ paddingTop: "2%" }}><svg style={{ paddingRight: "6px" }} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" /></svg>Calgary, Alberta, Canada</text>
-            <br />
-            <br />
-            <br />
-            <br />
-            <div className={styles.colorborder} style={{ width: "100%", borderBottom: "2px solid black", color: "whitesmoke" }}></div>
-          </div>
-        </a>
-        <a href="/projects">
-          <div className={styles.container} style={{ paddingLeft: "20px", paddingRight: "20px" }}>
-            <h1 style={{ paddingBottom: "15px" }}>Calgary Zoo - Canadian Wild's Bugtopia</h1>
-            <text style={{ paddingTop: "2%" }}><svg style={{ paddingRight: "6px" }} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" /></svg>Broward County, Florida</text>
-            <br />
-            <br />
-            <br />
-            <br />
-            <div className={styles.colorborder} style={{ width: "100%", borderBottom: "2px solid black" }}></div>
-          </div>
-        </a>
-      </div> */}
-
-
-
-
-      {/* markets we serve------------------------------------------------------------------------- */}
-      {/* <div style={{ backgroundColor: "whitesmoke", display: "flex", height: "", paddingTop: "80px", paddingBottom: "80px" }}>
-        <Col xs="4" sm="4" md="4" lg="4" xl="4" xxl="4" className={styles.left} style={{ backgroundColor: "", marginLeft: "auto", padding: "25px" }}>
-          <div style={{ backgroundColor: "", height: "100%" }}>
-            <h1 style={{ color: "blue" }}>Markets we serve</h1>
-            <br />
-            <p style={{ fontSize: "30px", width: "60%" }}>Keller has experience across many markets througout the construction industry and understand the unique challanges and...</p>
-            <br />
-            <br />
-            <p style={{ color: "blue" }}>Learn more --></p>
-          </div>
-        </Col>
-        <Col xs="4" sm="4" md="4" lg="4" xl="4" xxl="4" className={styles.right} style={{ backgroundColor: "", marginRight: "auto" }}>
-          <div style={{ backgroundColor: "", height: "100%" }}>
-            <h1 style={{ color: "blue" }}>Our expertise</h1>
-            <br />
-            <p style={{ fontSize: "30px", width: "60%" }}>Keller is able to tap into a wealth of experience, and using proven, best practice methods offer a wide range of...</p>
-            <br />
-            <br />
-            <p style={{ color: "blue" }}>Learn more --></p>
-          </div>
-        </Col>
-      </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
   )
