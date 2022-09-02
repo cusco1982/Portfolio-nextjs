@@ -95,7 +95,7 @@ export default function Home() {
       {/* intro --------------------------------------------------------------------------------------------------------------------- */}
 
 
-      <Row style={{ backgroundColor: "", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center" }}>
+      <Row style={{ backgroundColor: "", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center", maxHeight:"500px" }}>
 
 
 
@@ -105,11 +105,11 @@ export default function Home() {
 
           <h2 style={{ padding: "" }}><button style={{ backgroundColor: "orange" }}>About Us</button></h2>
 
-          <h1 style={{ backgroundColor: "", paddingTop: "40px", paddingBottom: "40px", color: 'blue' }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h1>
+          <h2 style={{ backgroundColor: "", marginTop:"20px", color: 'blue' }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
 
-          <p style={{ backgroundColor: "white", paddingTop: "40px", paddingBottom: "40px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numquam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
+          <p style={{ backgroundColor: "", marginTop:"20px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numbusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
 
-          <div style={{ display: 'flex', backgroundColor: "", padding: "10px" }}>
+          <div style={{ display: 'flex', backgroundColor: "red", padding: "10px", marginTop:"20px" }}>
 
             <Col>
               <h1 style={{ color: "orange" }}>454 m</h1>
@@ -126,9 +126,9 @@ export default function Home() {
 
 
 
-        <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px" }}>
+        <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px", position :"relative" }}>
 
-          <Image style={{ paddingLeft: "40px", paddingRight: "40px" }} src={verticalpicture} layout="responsive" height="1400px" width="" alt="green" />
+          <Image src={verticalpicture} layout="fill" alt="green" />
 
 
         </Col>
@@ -141,7 +141,7 @@ export default function Home() {
 
 
 
-      <Row style={{ backgroundColor: "", paddingTop: "40px", marginTop: "0px", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
+      <Row style={{ backgroundColor: "", marginTop: "60px", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
         <Col>
 
           <h1 style={{ paddingBottom: "10px" }}>SERVICES</h1>
@@ -158,9 +158,9 @@ export default function Home() {
 
 
 
-        <Col lg="8" style={{ height: "40vh", paddingTop: "60px", paddingBottom: "60px", backgroundColor: "", margin: "auto" }}>
+        <Col lg="8" style={{ height: "", padding:"0", backgroundColor: "", marginLeft: "auto", marginRight:"auto" }}>
 
-          <Row style={{ backgroundColor: "", width: "", margin: "auto", height: "50%" }}>
+          <Row style={{ backgroundColor: "", width: "", margin: "0", height: "" }}>
 
             <Col style={{ display: "flex", backgroundColor: "red" }}>
               <Col lg="3" style={{ backgroundColor: "white", margin: "", textAlign: "" }}><Image style={{ backgroundColor: "blue" }} src={ducticon} alt="safety" width={100} height={100} /></Col>
@@ -180,29 +180,23 @@ export default function Home() {
           </Row>
 
 
-          <Row style={{ backgroundColor: "", width: "", margin: "auto", height: "50%" }}>
+          <Row style={{ backgroundColor: "", width: "", margin: "0", height: "" }}>
             <Col style={{ display: "flex", backgroundColor: "green" }}>
               <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={mask} alt="safety" width={100} height={100} /></Col>
-              <Col style={{ backgroundColor: "", margin: "auto" }}><h2>Abatement</h2><p style={{ fontSize: "" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
+              <Col style={{ backgroundColor: "", margin: "" }}><h2>Abatement</h2><p style={{ fontSize: "" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
 
             <Col style={{ display: "flex", backgroundColor: "red" }}>
 
               <Col lg="3" style={{ backgroundColor: "blue", margin: "", textAlign: "center" }}><Image src={waterproof} alt="safety" width={70} height={90} /></Col>
-
-
-
               <Col style={{ backgroundColor: "", margin: "auto" }}>
 
                 <h2>Outdoor Piping</h2>
-
-                {/* <p style={{ fontSize: "" }}></p> */}
 
                 <ul>
                   <li>stainless steel pipe covering</li>
                   <li>pvc jacket</li>
                   <li>jacketing</li>
-
                 </ul>
 
               </Col>
@@ -242,7 +236,7 @@ import verticalTank from "../photos/vertical/verticalTanks.JPG" */}
 pipingHall
 verticalpicture */}
 
-        <Row style={{ height: "", paddingLeft: "50px",paddingRight:"50px", marginTop: "30px", marginBottom:"100px",marginLeft:"0px",marginRight:"0px", backgroundColor:"green" }}>
+        <Row style={{ height: "", paddingLeft: "50px",paddingRight:"50px", marginTop: "30px", marginBottom:"100px", backgroundColor:"green" }}>
 
 
           <Col style={{ backgroundColor: "blue" }}>
@@ -251,14 +245,14 @@ verticalpicture */}
 
 
 
-          <Col lg="7" style={{ backgroundColor: "orange", padding: "70px" }}>
+          <Col lg="5" style={{ backgroundColor: "orange", padding: "70px" }}>
             <Row className="h-50">
-              <Col style={{ backgroundColor: "red" }}><h1>800</h1><h4>Finished Projects</h4></Col>
-              <Col style={{ backgroundColor: "blue" }}><h1>800</h1><h4>Finished Projects</h4></Col>
+              <Col style={{ backgroundColor: "red" }}><h1>800</h1><h5>Finished Projects</h5></Col>
+              <Col style={{ backgroundColor: "blue" }}><h1>800</h1><h5>Finished Projects</h5></Col>
             </Row>
             <Row className="h-50">
-              <Col style={{ backgroundColor: "blue" }}><h1>800</h1><h4>Finished Projects</h4></Col>
-              <Col style={{ backgroundColor: "red" }}><h1>800</h1><h4>Finished Projects</h4></Col>
+              <Col style={{ backgroundColor: "blue" }}><h1>800</h1><h5>Finished Projects</h5></Col>
+              <Col style={{ backgroundColor: "red" }}><h1>800</h1><h5>Finished Projects</h5></Col>
             </Row>
 
           </Col>
