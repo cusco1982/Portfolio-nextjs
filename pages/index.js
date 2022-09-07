@@ -95,7 +95,7 @@ export default function Home() {
       {/* intro --------------------------------------------------------------------------------------------------------------------- */}
 
 
-      <Row style={{ backgroundColor: "", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center", maxHeight:"500px" }}>
+      <Row style={{ backgroundColor: "", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center", maxHeight: "500px" }}>
 
 
 
@@ -105,11 +105,11 @@ export default function Home() {
 
           <h2 style={{ padding: "" }}><button style={{ backgroundColor: "orange" }}>About Us</button></h2>
 
-          <h2 style={{ backgroundColor: "", marginTop:"20px", color: 'blue' }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
+          <h2 style={{ backgroundColor: "", marginTop: "20px", color: 'blue' }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
 
-          <p style={{ backgroundColor: "", marginTop:"20px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numbusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
+          <p style={{ backgroundColor: "", marginTop: "20px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numbusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
 
-          <div style={{ display: 'flex', backgroundColor: "red", padding: "10px", marginTop:"20px" }}>
+          <div style={{ display: 'flex', backgroundColor: "red", padding: "10px", marginTop: "20px" }}>
 
             <Col>
               <h1 style={{ color: "orange" }}>454 m</h1>
@@ -126,7 +126,7 @@ export default function Home() {
 
 
 
-        <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px", position :"relative" }}>
+        <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px", position: "relative" }}>
 
           <Image src={verticalpicture} layout="fill" alt="green" />
 
@@ -158,13 +158,13 @@ export default function Home() {
 
 
 
-        <Col lg="8" style={{ height: "", padding:"0", backgroundColor: "", marginLeft: "auto", marginRight:"auto" }}>
+        <Col lg="8" style={{ height: "", padding: "0", backgroundColor: "", marginLeft: "auto", marginRight: "auto", marginBottom: "40px", marginTop: "20px" }}>
 
-          <Row style={{ backgroundColor: "", width: "", margin: "0", height: "" }}>
+          <Row style={{ backgroundColor: "", margin: "0", height: "" }}>
 
             <Col style={{ display: "flex", backgroundColor: "red" }}>
               <Col lg="3" style={{ backgroundColor: "white", margin: "", textAlign: "" }}><Image style={{ backgroundColor: "blue" }} src={ducticon} alt="safety" width={100} height={100} /></Col>
-              <Col style={{ backgroundColor: "pink", margin: "", paddingLeft: "10px" }}><h2>HVAC Duct</h2><p style={{ fontSize: "" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
+              <Col style={{ backgroundColor: "pink", margin: "" }}><h2>HVAC Duct</h2><p style={{ fontSize: "" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
 
             <Col style={{ display: "flex", backgroundColor: "green" }}>
@@ -182,7 +182,7 @@ export default function Home() {
 
           <Row style={{ backgroundColor: "", width: "", margin: "0", height: "" }}>
             <Col style={{ display: "flex", backgroundColor: "green" }}>
-              <Col lg="3" style={{ backgroundColor: "", margin: "auto", textAlign: "right" }}><Image src={mask} alt="safety" width={100} height={100} /></Col>
+              <Col lg="3" style={{ backgroundColor: "black", margin: "", textAlign: "right" }}><Image src={mask} alt="safety" width={100} height={100} /></Col>
               <Col style={{ backgroundColor: "", margin: "" }}><h2>Abatement</h2><p style={{ fontSize: "" }}>Asbestos, lead, and mold abatement and remediation services.</p></Col>
             </Col>
 
@@ -204,7 +204,7 @@ export default function Home() {
             </Col>
 
             <Col style={{ display: "flex", backgroundColor: "green" }}>
-              <Col lg="3" style={{ backgroundColor: "", margin: "", textAlign: "" }}><Image src={safetyicon} alt="safety" width={100} height={100} /></Col>
+              <Col lg="3" style={{ backgroundColor: "black", margin: "", textAlign: "" }}><Image src={safetyicon} alt="safety" width={100} height={100} /></Col>
               <Col style={{ backgroundColor: "", margin: "" }}><h2>Consulting</h2><p style={{ fontSize: "" }}>Leverage 32 years of experience across project design and compliance.</p></Col>
             </Col>
           </Row>
@@ -215,7 +215,7 @@ export default function Home() {
       </div>
 
 
-      <Row style={{ backgroundColor: "", paddingBottom: "40px", marginTop: "0px", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
+      <Row style={{ backgroundColor: "", margin: "0", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
         <Col>FOLLOW US ON INSTAGRAM @INSTAGRAM.COM/WJBESTINSULATION</Col>
       </Row>
 
@@ -228,15 +228,7 @@ export default function Home() {
 
 
 
-
-        {/* 
-// import verticalSmallTank from "../photos/vertical/verticalSmallTank.jpg"
-import verticalTank from "../photos/vertical/verticalTanks.JPG" */}
-        {/* verticalDuct
-pipingHall
-verticalpicture */}
-
-        <Row style={{ height: "", paddingLeft: "50px",paddingRight:"50px", marginTop: "30px", marginBottom:"100px", backgroundColor:"green" }}>
+        <Row style={{ height: "", paddingLeft: "50px", paddingRight: "50px", marginTop: "30px", marginBottom: "100px", backgroundColor: "green" }}>
 
 
           <Col style={{ backgroundColor: "blue" }}>
