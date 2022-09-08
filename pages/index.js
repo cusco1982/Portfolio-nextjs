@@ -215,6 +215,7 @@ export default function Home() {
       </div>
 
 
+
       <Row style={{ backgroundColor: "", margin: "0", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
         <Col>FOLLOW US ON INSTAGRAM @INSTAGRAM.COM/WJBESTINSULATION</Col>
       </Row>
@@ -224,29 +225,31 @@ export default function Home() {
 
       {/* gallery ------------------------------------------------------------------------------------------------------------ */}
 
-      <Row>
+
+      <Col lg="10" style={{ margin: "auto", marginTop: "30px", marginBottom: "100px" }}>
+
+        <h3 style={{ textAlign: "center", backgroundColor: "red", padding: "0" }}>COMMERCIAL & INDUSTRIAL INSULATION SPECIALISTS </h3>
+
+        <Row style={{ height: "", padding: "0", backgroundColor: "green" }}>
 
 
 
-        <Row style={{ height: "", paddingLeft: "50px", paddingRight: "50px", marginTop: "30px", marginBottom: "100px", backgroundColor: "green" }}>
-
-
-          <Col style={{ backgroundColor: "blue" }}>
-            <Slider />
+          <Col style={{ backgroundColor: "blue", padding: "0", margin: "0" }}>
+            <Col lg="11" style={{ margin: "auto", padding: "0" }}>
+              <Slider />
+            </Col>
           </Col>
 
 
 
-          <Col lg="5" style={{ backgroundColor: "orange", padding: "70px" }}>
-            <Row className="h-50">
-              <Col style={{ backgroundColor: "red" }}><h1>800</h1><h5>Finished Projects</h5></Col>
-              <Col style={{ backgroundColor: "blue" }}><h1>800</h1><h5>Finished Projects</h5></Col>
-            </Row>
-            <Row className="h-50">
-              <Col style={{ backgroundColor: "blue" }}><h1>800</h1><h5>Finished Projects</h5></Col>
-              <Col style={{ backgroundColor: "red" }}><h1>800</h1><h5>Finished Projects</h5></Col>
-            </Row>
-
+          <Col lg="5" style={{ backgroundColor: "orange", padding: "0px" }}>
+            <div>
+              <h3 style={{ textAlign: "center", backgroundColor: "red" }}>Commerical & Industrial Insulation Specialists</h3>
+              <p>For over 30 years, commercial and industrial businesses from Chattanooga and beyond have trusted Breeding Insulation Company for the highest quality insulation sales and services. Our removable insulation protects your pipes against weathering while still occasionally accessing valves or joints.</p>
+              <p>Breeding Insulation delivers its products and service in a trustworthy manner. This has always been our focus. Our friendly professionals are true experts in the field, all of whom are dedicated to providing the highest customer service when completing a job.</p>
+              <p style={{ marginTop: "60px" }}>We ensure that your mechanical system is insulated in the most efficient manner, and we guarantee satisfaction in each project completion. When you are ready to outfit your mechanical, commercial, or industrial insulation, trust the team at Breeding Insulation in Chattanooga. Call (423) 698-8019 today for your free quote.</p>
+              <button>Call (732) 423-9671</button>
+            </div>
           </Col>
 
 
@@ -254,7 +257,8 @@ export default function Home() {
         </Row>
 
 
-      </Row>
+
+      </Col>
 
 
 
@@ -280,8 +284,8 @@ export default function Home() {
 
           <Row style={{ color: "white", textAlign: "center", backgroundColor: "", paddingTop: "50px", margin: "0" }}>
             <header style={{ fontSize: "30px", fontWeight: "400", letterSpacing: "4px", padding: "20px" }}>ABOUT US</header>
-            <h1 style={{ lineHeight: "1.2", fontWeight: "800", fontSize: "50px", paddingBottom: "20px" }}>Providing all kinds <br /> of construction services</h1>
-            <p style={{ fontSize: "25px", lineHeight: "2.2", fontWeight: "300", padding: "30px", backgroundColor: "" }}>Our construction company has been founded 10 years ago, at the very peak of the building frenzy in the US…<br /> Since then we’ve built hundreds of commercial, government and private buildings and facilities. It may not sound like a lot, but if you estimate the,<br /> working hours, materials, planning and correlating that were all involved in completing each separate project, then our productivity is immense!</p>
+            <h2 style={{ lineHeight: "1.2", fontWeight: "600", fontSize: "40px", paddingBottom: "20px" }}>Providing all kinds <br /> of construction services</h2>
+            <p style={{ fontSize: "25px", lineHeight: "2.2", fontWeight: "200", padding: "30px", backgroundColor: "" }}>Our construction company has been founded 10 years ago, at the very peak of the building frenzy in the US…<br /> Since then we’ve built hundreds of commercial, government and private buildings and facilities. It may not sound like a lot, but if you estimate the,<br /> working hours, materials, planning and correlating that were all involved in completing each separate project, then our productivity is immense!</p>
           </Row>
 
 
@@ -294,22 +298,22 @@ export default function Home() {
 
 
               <Col style={{ backgroundColor: "", padding: "0", margin: "0" }}>
-                <Row id="num" data-value="26" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
+                <Row id="num" data-value="26" style={{ backgroundColor: "", justifyContent: "center", fontSize: "70px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
                 <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>Years on the Market</Row>
               </Col>
 
               <Col style={{ backgroundColor: "", padding: "0", margin: "0" }}>
-                <Row id="num" data-value="4" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
+                <Row id="num" data-value="4" style={{ backgroundColor: "", justifyContent: "center", fontSize: "70px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
                 <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", margin: "0", color: "white", fontWeight: "800", lineHeight: "2" }}>Operational Brigades</Row>
               </Col>
 
               <Col style={{ backgroundColor: "", padding: "0", margin: "0" }}>
-                <Row id="num" data-value="378" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
+                <Row id="num" data-value="378" style={{ backgroundColor: "", justifyContent: "center", fontSize: "70px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
                 <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>Units Engineering</Row>
               </Col>
 
               <Col style={{ backgroundColor: "", padding: "0", margin: "0" }}>
-                <Row id="num" data-value="400" style={{ backgroundColor: "", justifyContent: "center", fontSize: "90px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
+                <Row id="num" data-value="400" style={{ backgroundColor: "", justifyContent: "center", fontSize: "70px", margin: "0", color: "blue", fontWeight: "800", lineHeight: "1.3" }}>0</Row>
                 <Row style={{ backgroundColor: "", justifyContent: "center", fontSize: "32px", color: "white", fontWeight: "800", lineHeight: "2" }}>Employees of the company</Row>
               </Col>
 

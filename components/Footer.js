@@ -9,12 +9,7 @@ const Footer = () => {
 
 
 
-            <div style={{ borderTop: "1px solid black" }}></div>
-
-
-
-
-
+            {/* assistance tabs --------------------------------------------------------- */}
             <Row style={{ backgroundColor: "white", justifyContent: "center", textAlign: "center", fontSize: "32px", width: "100vw" }}>
 
                 <Col className={styles.contactrow}></Col>
@@ -43,21 +38,24 @@ const Footer = () => {
 
 
 
-            <Col lg="10" style={{ backgroundColor: "white", margin: "auto", display: "flex", paddingLeft: "0", paddingRight: "0", paddingBottom: "40px", paddingTop: "40px" }}>
+            <Col lg="10" style={{ backgroundColor: "white", margin: "auto", display: "flex", padding: "0" }}>
 
 
-                <Col lg="9" style={{ backgroundColor: "", margin: "auto", fontSize: "25px", display: "flex", padding: "0" }}>
+
+                <Col lg="9" style={{ backgroundColor: "pink", margin: "auto", fontSize: "", display: "flex", padding: "0" }}>
                     <Col lg="7" style={{ padding: "0" }}>
-                        <div style={{ paddingTop: "20px", paddingBottom: "15px", color: "", fontFamily: "'Playfair Display', serif", margin: "", fontSize: "40px", letterSpacing: "", display: "flex", backgroundColor: "" }}>
+                        <div style={{ paddingTop: "", paddingBottom: "15px", color: "", fontFamily: "'Playfair Display', serif", margin: "", fontSize: "40px", letterSpacing: "", display: "flex", backgroundColor: "" }}>
                             <div style={{ color: "blue", letterSpacing: "-2px" }}>WJ</div>
                             <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "8px" }}>Best</div>
                             <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "2px" }}>Insulation</div>
                         </div>
-                        <div style={{ paddingTop: "15px", paddingBottom: "15px", fontStyle: "italic" }}>Serving New Jersey, New York, and Pennsylvania.</div>
-                        <div style={{ paddingTop: "15px", paddingBottom: "15px", fontWeight: "" }}>© 2022 - WJ Best Insulation, LLC All Rights Reserved.</div>
+                        <div style={{ paddingTop: "", paddingBottom: "", fontStyle: "italic" }}>Serving New Jersey, New York, and Pennsylvania.</div>
+                        <div style={{ paddingTop: "", paddingBottom: "", fontWeight: "" }}>© 2022 - WJ Best Insulation, LLC All Rights Reserved.</div>
                     </Col>
 
-                    <Col style={{ backgroundColor: "" }}>
+
+
+                    <Col style={{ backgroundColor: "red" }}>
                         <div style={{ fontWeight: "bold", paddingBottom: "15px", paddingLeft: "90px" }}>Contact</div>
 
                         <div style={{ display: "flex", backgroundColor: "", padding: "15px" }}>
@@ -78,7 +76,7 @@ const Footer = () => {
                 </Col>
 
 
-                <Col style={{ backgroundColor: "", margin: "auto", fontSize: "25px" }}>
+                <Col style={{ backgroundColor: "green", margin: "auto", fontSize: "20px" }}>
                     <div style={{ backgroundColor: "", padding: "10px" }}><a style={{ textDecoration: "" }} href="">Company</a></div>
                     <div style={{ backgroundColor: "", padding: "10px" }}><a style={{ textDecoration: "" }} href="">Services</a></div>
                     <div style={{ backgroundColor: "", padding: "10px" }}><a style={{ textDecoration: "" }} href="">Portfolio</a></div>
@@ -90,9 +88,29 @@ const Footer = () => {
 
 
 
+            <Row style={{ padding: "0", margin: "0" }}>
+
+                <Col lg="10" style={{ backgroundColor: "blue", padding: "0", margin: "auto" }}>
+
+
+                    <Row style={{ padding: "0", margin: "0," }}>
+                        <Col style={{ backgroundColor: "red" }}>hello</Col>
+                        <Col style={{ backgroundColor: "green" }}>hello</Col>
+                        <Col style={{ backgroundColor: "pink" }}>hello</Col>
+                    </Row>
 
 
 
+                </Col>
+
+
+
+            </Row>
+
+
+
+
+            {/* bottom row --------------------------------------------------------- */}
             <Row style={{ backgroundColor: "white", width: "100vw" }}>
 
                 <Col lg="10" style={{ backgroundColor: "", margin: "auto", display: "flex", borderTop: "1px solid grey", padding: "0" }}>
