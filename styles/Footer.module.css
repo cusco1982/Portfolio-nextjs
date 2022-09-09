@@ -26,3 +26,9 @@
 .contactlink3:hover{
     border: 1px solid rgb(0, 44, 165);
 }
+
+.footersocial a{
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
