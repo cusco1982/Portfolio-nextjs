@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import React, { useEffect } from 'react';
 
 import Slider from "../components/Slider.js"
-import Jumbotron from "../components/Jumbotron.js"
+
 
 import armaflex from "../photos/armaflex.jpeg"
 import ducticon from "../photos/ducticon.png"
@@ -65,8 +65,7 @@ export default function Home() {
 
 
       <Row className={styles.jumboBackground} style={{ height: "60vh", backgroundColor: "black", textAlign: "center" }}>
-        {/* <Slider /> */}
-        {/* <Jumbotron/> */}
+
 
 
         <div style={{ margin: "auto", color: "white" }}>
