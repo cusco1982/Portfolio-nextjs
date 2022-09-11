@@ -49,13 +49,8 @@ const Footer = () => {
 
 
                         <Col style={{ backgroundColor: "pink", padding: "0", margin: "0" }}>
-                            <div style={{ paddingTop: "", paddingBottom: "15px", color: "", fontFamily: "'Playfair Display', serif", margin: "", fontSize: "40px", letterSpacing: "", display: "flex", backgroundColor: "" }}>
-                                <div style={{ color: "blue", letterSpacing: "-2px" }}>WJ</div>
-                                <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "8px" }}>Best</div>
-                                <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "2px" }}>Insulation</div>
-                            </div>
                             <div style={{ paddingTop: "", paddingBottom: "", fontStyle: "italic" }}>Serving New Jersey, New York, and Pennsylvania.</div>
-                            <div style={{ paddingTop: "", paddingBottom: "", fontWeight: "" }}>© 2022 - WJ Best Insulation, LLC All Rights Reserved.</div>
+
                         </Col>
 
                         <Col style={{ backgroundColor: "orange", padding: "0", margin: "0" }}>
