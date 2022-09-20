@@ -225,11 +225,11 @@ export default function Home() {
       {/* gallery ------------------------------------------------------------------------------------------------------------ */}
 
 
-      <Col lg="10" style={{ margin: "auto", marginTop: "30px", marginBottom: "100px" }}>
+      <Col lg="10" style={{ margin: "auto", marginTop: "30px", marginBottom: "100px", backgroundColor:"green" }}>
 
         <h3 style={{ textAlign: "center", backgroundColor: "red", padding: "0" }}>COMMERCIAL & INDUSTRIAL INSULATION SPECIALISTS </h3>
 
-        <Row style={{ height: "", padding: "0", backgroundColor: "green" }}>
+        <Row style={{ height: "", padding: "0", backgroundColor: "green", margin:"0" }}>
 
 
 
