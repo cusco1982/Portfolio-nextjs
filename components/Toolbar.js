@@ -32,7 +32,7 @@ export default class Toolbar extends React.Component {
       <div>
         <Navbar fixed="top" color="light" light expand="md" style={{ height: "10vh", borderBottom:"1px solid blue" }}>
 
-          <NavbarBrand href="/">
+          <NavbarBrand href="/" style={{backgroundColor:"red"}}>
             <div style={{ paddingTop: "", paddingBottom: "15px", color: "", fontFamily: "'Playfair Display', serif", margin: "0", padding: "0", fontSize: "40px", letterSpacing: "", display: "flex", backgroundColor: "" }}>
               <div style={{ color: "blue", letterSpacing: "-2px" }}>WJ</div>
               <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "8px" }}>Best</div>
@@ -45,7 +45,9 @@ export default class Toolbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
 
 
-            <Nav className="ml-auto" navbar>
+            <Nav className="m-auto" navbar style={{backgroundColor:"green"}}>
+
+            
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>
