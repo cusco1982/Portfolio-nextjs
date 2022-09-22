@@ -13,6 +13,12 @@ import {
   // DropdownItem
 } from 'reactstrap';
 
+import styles from "../styles/Toolbar.module.css";
+
+
+
+
+
 export default class Toolbar extends React.Component {
   constructor(props) {
     super(props);
@@ -32,7 +38,7 @@ export default class Toolbar extends React.Component {
       <div>
         <Navbar fixed="top" color="light" light expand="md" style={{ height: "10vh", borderBottom:"1px solid blue" }}>
 
-          <NavbarBrand href="/" style={{backgroundColor:"red"}}>
+          <NavbarBrand className={styles.navbrand} href="/" style={{backgroundColor:"pink", position:"relative"}}>
             <div style={{ paddingTop: "", paddingBottom: "15px", color: "", fontFamily: "'Playfair Display', serif", margin: "0", padding: "0", fontSize: "40px", letterSpacing: "", display: "flex", backgroundColor: "" }}>
               <div style={{ color: "blue", letterSpacing: "-2px" }}>WJ</div>
               <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "8px" }}>Best</div>
@@ -42,10 +48,10 @@ export default class Toolbar extends React.Component {
 
           <NavbarToggler onClick={this.toggle} />
 
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <Collapse isOpen={this.state.isOpen} navbar style={{backgroundColor:"blue"}}>
 
 
-            <Nav className="m-auto" navbar style={{backgroundColor:"green"}}>
+            <Nav className={styles.navlinks} navbar style={{backgroundColor:"green", marginLeft:"30%"}}>
 
             
               <NavItem>
@@ -64,8 +70,8 @@ export default class Toolbar extends React.Component {
                 <NavLink href="/contact">Contact Us</NavLink>
               </NavItem>
 
-              <NavItem>
-                <NavLink href="/quote">Get a Quote</NavLink>
+              <NavItem style={{backgroundColor:"red"}}>
+                <NavLink style={{backgroundColor:""}} href="/quote">Get a Quote</NavLink>
               </NavItem>
 
 
