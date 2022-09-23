@@ -1,7 +1,19 @@
-/* .navbrand {
-    background-color: red;
+.navbrand {
+    background-color: pink;
+    margin-left: 25px;
 }
 
 .navlinks {
     background-color: green;
-} */
+    margin-left: 22%;
+    width:100%;
+
+}
+
+.navlinky{
+    background-color: purple;
+}
+
+.navlinky:hover{
+    background-color: white;
+}

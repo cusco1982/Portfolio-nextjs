@@ -36,9 +36,9 @@ export default class Toolbar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar fixed="top" color="light" light expand="md" style={{ height: "10vh", borderBottom:"1px solid blue" }}>
+        <Navbar fixed="top" color="light" light expand="md" style={{ height: "", borderBottom: "1px solid blue" }}>
 
-          <NavbarBrand className={styles.navbrand} href="/" style={{backgroundColor:"pink", position:"relative"}}>
+          <NavbarBrand className={styles.navbrand} href="/">
             <div style={{ paddingTop: "", paddingBottom: "15px", color: "", fontFamily: "'Playfair Display', serif", margin: "0", padding: "0", fontSize: "40px", letterSpacing: "", display: "flex", backgroundColor: "" }}>
               <div style={{ color: "blue", letterSpacing: "-2px" }}>WJ</div>
               <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "8px" }}>Best</div>
@@ -51,33 +51,33 @@ export default class Toolbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar style={{backgroundColor:"blue"}}>
 
 
-            <Nav className={styles.navlinks} navbar style={{backgroundColor:"green", marginLeft:"30%"}}>
+            <Nav className={styles.navlinks} navbar style={{marginTop:"20px", marginBottom:"20px"}}>
 
-            
+
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px", backgroundColor:""}} href="/">Home</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="/services/">Services</NavLink>
+                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px"}} href="/services/">Services</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="/projects">Gallery</NavLink>
+                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px"}} href="/projects">Gallery</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="/contact">Contact Us</NavLink>
+                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px"}} href="/contact">Contact Us</NavLink>
               </NavItem>
 
-              <NavItem style={{backgroundColor:"red"}}>
-                <NavLink style={{backgroundColor:""}} href="/quote">Get a Quote</NavLink>
+              <NavItem style={{ backgroundColor: "" }}>
+                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px"}} href="/quote">Get a Quote</NavLink>
               </NavItem>
 
 
             </Nav>
           </Collapse>
-        
+
         </Navbar>
       </div>
     );
