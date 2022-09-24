@@ -4,16 +4,20 @@
 }
 
 .navlinks {
-    background-color: green;
-    margin-left: 22%;
+    /* background-color: green; */
+    margin-left: 20%;
     width:100%;
 
 }
 
 .navlinky{
-    background-color: purple;
+    /* background-color: purple; */
+    font-weight: 800;
 }
 
 .navlinky:hover{
-    background-color: white;
+    background-color: whitesmoke;
+    transition: .5s all ease;
+    border-bottom: 1px solid black;
+
 }

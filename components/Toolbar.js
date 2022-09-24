@@ -35,7 +35,7 @@ export default class Toolbar extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: "red" }}>
         <Navbar fixed="top" color="light" light expand="md" style={{ height: "", borderBottom: "1px solid blue" }}>
 
           <NavbarBrand className={styles.navbrand} href="/">
@@ -48,30 +48,30 @@ export default class Toolbar extends React.Component {
 
           <NavbarToggler onClick={this.toggle} />
 
-          <Collapse isOpen={this.state.isOpen} navbar style={{backgroundColor:"blue"}}>
+          <Collapse isOpen={this.state.isOpen} navbar style={{ backgroundColor: "" }}>
 
 
-            <Nav className={styles.navlinks} navbar style={{marginTop:"20px", marginBottom:"20px"}}>
+            <Nav className={styles.navlinks} navbar style={{}}>
 
 
               <NavItem>
-                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px", backgroundColor:""}} href="/">Home</NavLink>
+                <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px", backgroundColor: "" }} href="/">Home</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px"}} href="/services/">Services</NavLink>
+                <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/services/">Services</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px"}} href="/projects">Gallery</NavLink>
+                <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/projects">Gallery</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px"}} href="/contact">Contact Us</NavLink>
+                <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/contact">Contact Us</NavLink>
               </NavItem>
 
               <NavItem style={{ backgroundColor: "" }}>
-                <NavLink className={styles.navlinky} style={{paddingTop:"15px", paddingBottom:"15px", paddingLeft:"25px", paddingRight:"25px"}} href="/quote">Get a Quote</NavLink>
+                <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/quote">Get a Quote</NavLink>
               </NavItem>
 
 
