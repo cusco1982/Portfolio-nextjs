@@ -154,3 +154,12 @@ background-color: red;
 /* .carousel_description{
 background-color: pink;
 } */
+
+.quotebutton {
+  background-color: blue;
+}
+
+.quotebutton:hover {
+  background-color: white;
+  transition: .4s all ease;
+}

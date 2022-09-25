@@ -17,7 +17,7 @@
 
 .navlinky:hover{
     background-color: whitesmoke;
-    transition: .5s all ease;
+    /* transition: .5s all ease; */
     border-bottom: 1px solid black;
 
 }

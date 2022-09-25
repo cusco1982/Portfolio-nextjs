@@ -63,54 +63,45 @@ export default function Home() {
       </Head>
 
 
-
+      {/* jumbotron ------------*/}
       <Row className={styles.jumboBackground} style={{ height: "60vh", backgroundColor: "black", textAlign: "center" }}>
-
-
 
         <div style={{ margin: "auto", color: "white" }}>
 
           <h1 style={{ backgroundColor: "", padding: "20px" }}>#1 Mechanical Insulation Service</h1>
           <div style={{ borderTop: "1px solid #4db2ec", width: "10%", padding: "10px", margin: "auto" }}></div>
           <p style={{ backgroundColor: "", padding: "20px" }}>We believe that the satisfaction and safety of our <br /> customers is our #1 Priority.</p>
-          <button style={{ backgroundColor: "#4db2ec", padding: "20px" }}>GET A QUOTE</button>
+
+          <div style={{ position: "absolute", zIndex: "1", left: "0", right: "0", backgroundColor: "red" }} href="/quote">
+            <a style={{ textDecoration: "none" }} href="/quote"><button className={styles.quotebutton} style={{ backgroundColor: "", padding: "20px" }}>GET A QUOTE</button></a>
+          </div>
 
         </div>
-
-
-
-
-
 
 
       </Row>
 
 
 
+      {/* About us --------------------------------------------------------------------------------------------------------------------- */}
 
 
 
-
-      {/* intro --------------------------------------------------------------------------------------------------------------------- */}
-
-
-      <Row style={{ backgroundColor: "", padding: "0", marginTop: "40px", marginBottom: "40px", justifyContent: "center", maxHeight: "500px" }}>
+      <Row style={{ backgroundColor: "black", padding: "0", marginTop: "60px", marginBottom: "80px", justifyContent: "center", maxHeight: "500px" }}>
 
 
 
-
-
-        <Col lg="4" style={{ backgroundColor: "", display: "", padding: "0", margin: "0" }}>
+        <Col lg="4" style={{ backgroundColor: "green", display: "", padding: "0", margin: "0" }}>
 
           <h2 style={{ padding: "" }}><button style={{ backgroundColor: "orange" }}>About Us</button></h2>
 
-          <h2 style={{ backgroundColor: "", marginTop: "20px", color: 'blue' }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
+          <h2 style={{ backgroundColor: "red", marginTop: "20px", color: 'blue', marginBottom: "30px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
 
-          <p style={{ backgroundColor: "", marginTop: "20px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numbusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
+          <p style={{ backgroundColor: "", marginTop: "40px", marginBottom: "20px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numbusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
 
-          <div style={{ display: 'flex', backgroundColor: "red", padding: "10px", marginTop: "20px" }}>
+          <div style={{ display: 'flex', backgroundColor: "red", padding: "10px", marginTop: "40px", marginBottom: "40px" }}>
 
-            <Col>
+            <Col style={{ backgroundColor: "black" }}>
               <h1 style={{ color: "orange" }}>454 m</h1>
               <div style={{ color: "blue" }}>Delivery Packages</div>
             </Col>
@@ -137,7 +128,6 @@ export default function Home() {
 
 
       </Row>
-
 
 
       <Row style={{ backgroundColor: "", marginTop: "60px", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
@@ -225,11 +215,11 @@ export default function Home() {
       {/* gallery ------------------------------------------------------------------------------------------------------------ */}
 
 
-      <Col lg="10" style={{ margin: "auto", marginTop: "30px", marginBottom: "100px", backgroundColor:"green" }}>
+      <Col lg="10" style={{ margin: "auto", marginTop: "30px", marginBottom: "100px", backgroundColor: "green" }}>
 
         <h3 style={{ textAlign: "center", backgroundColor: "red", padding: "0" }}>COMMERCIAL & INDUSTRIAL INSULATION SPECIALISTS </h3>
 
-        <Row style={{ height: "", padding: "0", backgroundColor: "green", margin:"0" }}>
+        <Row style={{ height: "", padding: "0", backgroundColor: "green", margin: "0" }}>
 
 
 
