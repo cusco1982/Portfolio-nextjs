@@ -28,29 +28,29 @@ import { Container, Row, Col } from 'reactstrap';
 export default function Home() {
 
 
-  useEffect(() => {
-    var a = 0;
-    $(window).scroll(function () {
-      var oTop = $(`#counter`).offset().top - window.innerHeight;
-      if (a == 0 && $(window).scrollTop() > oTop) {
-        let valueDisplays = document.querySelectorAll("#num");
-        let interval = 3000;
-        valueDisplays.forEach((valueDisplay) => {
-          let startValue = 0;
-          let endValue = parseInt(valueDisplay.getAttribute("data-value"));
-          let duration = Math.floor(interval / endValue);
-          let counter = setInterval(function () {
-            startValue += 1;
-            valueDisplay.textContent = startValue;
-            if (startValue == endValue) {
-              clearInterval(counter);
-            }
-          }, duration);
-        })
-        a = 1;
-      }
-    });
-  });
+  // useEffect(() => {
+  //   var a = 0;
+  //   $(window).scroll(function () {
+  //     var oTop = $(`#counter`).offset().top - window.innerHeight;
+  //     if (a == 0 && $(window).scrollTop() > oTop) {
+  //       let valueDisplays = document.querySelectorAll("#num");
+  //       let interval = 3000;
+  //       valueDisplays.forEach((valueDisplay) => {
+  //         let startValue = 0;
+  //         let endValue = parseInt(valueDisplay.getAttribute("data-value"));
+  //         let duration = Math.floor(interval / endValue);
+  //         let counter = setInterval(function () {
+  //           startValue += 1;
+  //           valueDisplay.textContent = startValue;
+  //           if (startValue == endValue) {
+  //             clearInterval(counter);
+  //           }
+  //         }, duration);
+  //       })
+  //       a = 1;
+  //     }
+  //   });
+  // });
 
 
   return (
@@ -85,8 +85,6 @@ export default function Home() {
 
       {/* About us --------------------------------------------------------------------------------------------------------------------- */}
 
-
-
       <Row style={{ backgroundColor: "black", padding: "0", marginTop: "60px", marginBottom: "80px", justifyContent: "center", maxHeight: "500px" }}>
 
 
@@ -94,33 +92,26 @@ export default function Home() {
         <Col lg="4" style={{ backgroundColor: "green", display: "", padding: "0", margin: "0" }}>
 
           <h2 style={{ padding: "" }}><button style={{ backgroundColor: "orange" }}>About Us</button></h2>
-
           <h2 style={{ backgroundColor: "red", marginTop: "20px", color: 'blue', marginBottom: "30px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
-
           <p style={{ backgroundColor: "", marginTop: "40px", marginBottom: "20px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numbusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
 
           <div style={{ display: 'flex', backgroundColor: "red", padding: "10px", marginTop: "40px", marginBottom: "40px" }}>
-
             <Col style={{ backgroundColor: "black" }}>
               <h1 style={{ color: "orange" }}>454 m</h1>
               <div style={{ color: "blue" }}>Delivery Packages</div>
             </Col>
-
             <Col>
               <h1 style={{ color: "orange" }}>127</h1>
               <div style={{ color: "blue" }}>Countries Covered</div>
             </Col>
-
           </div>
+
         </Col>
 
 
 
         <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px", position: "relative" }}>
-
           <Image src={verticalpicture} layout="fill" alt="green" />
-
-
         </Col>
 
 
@@ -128,6 +119,9 @@ export default function Home() {
 
 
       </Row>
+
+
+
 
 
       <Row style={{ backgroundColor: "", marginTop: "60px", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
@@ -205,17 +199,13 @@ export default function Home() {
 
 
 
-      <Row style={{ backgroundColor: "", margin: "0", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
-        <Col>FOLLOW US ON INSTAGRAM @INSTAGRAM.COM/WJBESTINSULATION</Col>
-      </Row>
-
 
 
 
       {/* gallery ------------------------------------------------------------------------------------------------------------ */}
 
 
-      <Col lg="10" style={{ margin: "auto", marginTop: "30px", marginBottom: "100px", backgroundColor: "green" }}>
+      {/* <Col lg="10" style={{ margin: "auto", marginTop: "30px", marginBottom: "100px", backgroundColor: "green" }}>
 
         <h3 style={{ textAlign: "center", backgroundColor: "red", padding: "0" }}>COMMERCIAL & INDUSTRIAL INSULATION SPECIALISTS </h3>
 
@@ -247,10 +237,86 @@ export default function Home() {
 
 
 
-      </Col>
+      </Col> */}
 
 
 
+      {/* new gallery ------------------------------------------------------------------------------------------------------------ */}
+
+      <Row style={{ backgroundColor: "red", padding: "0", margin: "0" }}>
+        <Col lg="8" style={{ backgroundColor: "blue", padding: "0", marginTop: "80px", marginBottom: "80px", marginLeft: "auto", marginRight: "auto" }}>
+
+          <Slider />
+
+        </Col>
+      </Row>
+
+
+      <Row style={{ padding: "0", margin: "0" }}>
+        <Col lg="10" style={{ padding: "0", margin: "auto", backgroundColor: "green", textAlign: "center" }}>
+          We are committed to projects done effectively, efficiently, safely, and on schedule for the most reasonable price.
+         </Col>
+      </Row>
+
+
+
+      <Row style={{ padding: "20px", margin: "0" }}>
+
+        <Col lg="8" style={{ padding: "0", margin: "auto", backgroundColor: "blue" }}>
+
+
+          <Row style={{ padding: "0", margin: "0" }}>
+            <Col style={{ backgroundColor: "green" }}>
+
+              <Row className={styles.services}>
+                <div style={{ display: "flex", backgroundColor: "red", padding:"0", margin:"0" }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg>
+                  &nbsp;
+                  <p style={{}}>Chilled-water Piping</p>
+                </div>
+
+              </Row>
+
+              <Row className={styles.services}>Refrigeration Piping</Row>
+              <Row className={styles.services}>Plumbing Piping</Row>
+            </Col>
+
+
+            <Col>
+              <Row className={styles.services}>Boilers</Row>
+              <Row className={styles.services}>HVAC Duct</Row>
+              <Row className={styles.services}>Fire-Rated Grease Ducting</Row>
+            </Col>
+            <Col>
+              <Row className={styles.services}>Tanks</Row>
+              <Row className={styles.services}>Pressure Vessels</Row>
+              <Row className={styles.services}>Process Piping</Row>
+            </Col>
+            <Col>
+              <Row className={styles.services}>Breachings</Row>
+              <Row className={styles.services}>Sound Applications</Row>
+              <Row className={styles.services}>Maintenance</Row>
+            </Col>
+          </Row>
+
+
+        </Col>
+
+      </Row>
+
+
+      <Row style={{ backgroundColor: "blue", margin: "80px", justifyContent: "", textAlign: "center", fontSize: "20px", padding: "0" }}>
+        <Col>FOLLOW US ON INSTAGRAM @INSTAGRAM.COM/WJBESTINSULATION</Col>
+      </Row>
+
+
+
+
+
+
+
+
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
 
 
 
@@ -266,7 +332,7 @@ export default function Home() {
 
 
       {/* About Us backgroundimg----------------------------------------------------------------------------------------------------------------------- */}
-      <Row className={styles.counterBackground}>
+      {/* <Row className={styles.counterBackground}>
 
         <Col lg="10" style={{ margin: "auto", padding: "0" }}>
 
@@ -325,7 +391,7 @@ export default function Home() {
         </Col>
 
 
-      </Row>
+      </Row> */}
 
 
 
