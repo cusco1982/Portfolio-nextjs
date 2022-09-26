@@ -76,7 +76,7 @@ class Slider extends Component {
         <CarouselItem onExiting={this.onExiting} onExited={this.onExited} key={item.src}>
 
           <img className="w-100" style={{height:"50vh"}} src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
           
         </CarouselItem>
 

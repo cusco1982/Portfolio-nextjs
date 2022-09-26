@@ -164,9 +164,20 @@ background-color: pink;
   transition: .4s all ease;
 }
 
+
 .services{
-
   padding: 10px;
-
-
+}
+.services > div{
+  display: flex;
+}
+.services > div > svg{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  color: blue;
+}
+.services > div > p{
+  margin-top: auto;
+  margin-bottom: auto;
 }

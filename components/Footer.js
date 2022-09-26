@@ -109,7 +109,7 @@ const Footer = () => {
 
                         <Col style={{ backgroundColor: "", padding: "0", margin: "auto" }}>
 
-                            <div style={{ padding: "0", fontWeight: "600", fontSize: "15px", margin: "0", backgroundColor: "" }}>© 2022 WJ BEST INSULATION LLC. ALL RIGHTS RESERVED.</div>
+                            <div style={{ padding: "0", fontWeight: "600", fontSize: "15px", margin: "0", backgroundColor: "" }}>© 2022 WJ Best Insulation LLC. All Rights Reserved.</div>
 
                         </Col>
 
