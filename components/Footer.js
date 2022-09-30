@@ -11,7 +11,7 @@ const Footer = () => {
 
             {/* assistance row --------------------------------------------------------- */}
 
-            <Row style={{ backgroundColor: "black", textAlign: "center", fontSize: "20px", padding: "0", margin: "0" }}>
+            {/* <Row style={{ backgroundColor: "black", textAlign: "center", fontSize: "20px", padding: "0", margin: "0" }}>
 
                 <Col className={styles.contactrow}></Col>
 
@@ -32,7 +32,7 @@ const Footer = () => {
                 <Col className={styles.contactrow}></Col>
 
 
-            </Row>
+            </Row> */}
 
 
 
