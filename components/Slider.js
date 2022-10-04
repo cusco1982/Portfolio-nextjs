@@ -77,6 +77,8 @@ class Slider extends Component {
 
           <img className="w-100" style={{height:"50vh"}} src={item.src} alt={item.altText} />
           {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
+          {/* <Image src={verticalpicture} layout="fill" alt="green" /> */}
+
           
         </CarouselItem>
 
