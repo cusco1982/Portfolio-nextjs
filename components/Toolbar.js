@@ -20,6 +20,8 @@ import styles from "../styles/Toolbar.module.css";
 
 
 export default class Toolbar extends React.Component {
+
+
   constructor(props) {
     super(props);
 
@@ -28,14 +30,25 @@ export default class Toolbar extends React.Component {
       isOpen: false
     };
   }
+
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
+
+
+
+
   render() {
     return (
-      <div style={{ backgroundColor: "red" }}>
+
+
+
+
+
         <Navbar fixed="top" color="light" light expand="md" style={{ height: "", borderBottom: "1px solid blue" }}>
 
           <NavbarBrand className={styles.navbrand} href="/">
@@ -59,7 +72,7 @@ export default class Toolbar extends React.Component {
               </NavItem>
 
               <NavItem>
-                <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/services/">Services</NavLink>
+                <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/services">Services</NavLink>
               </NavItem>
 
               <NavItem>
@@ -75,11 +88,27 @@ export default class Toolbar extends React.Component {
               </NavItem>
 
 
+              <NavItem>
+
+                <NavLink style={{}} href="/">7329101016</NavLink>
+
+              </NavItem>
+
+
+
             </Nav>
           </Collapse>
 
+
+
+
         </Navbar>
-      </div>
+
+
+
+
+
+
     );
   }
 }

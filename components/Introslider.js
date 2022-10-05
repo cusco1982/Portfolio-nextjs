@@ -1,113 +1,70 @@
-import React, { Component } from 'react';
-import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption
-} from 'reactstrap';
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image'
 
+// import armaflex from "../photos/armaflex.jpeg"
 // import Image from 'next/image'
 
-// import armaflex from "../photos/armaflex.jpeg";
-// import ductwrap from "../photos/ductwrap.jpeg";
-// import roofpiping from "../photos/roofpiping.jpeg";
 
 
-const items = [
-    {
-        src: "https://www.snipsmag.com/ext/resources/issues/2017/June/insulation/Ductwork-feature.jpg?t=1495559906&width=900",
-        altText: 'Slide 1',
-        caption: 'Slide 1'
-    },
-    {
-        src: "https://www.harosinsulation.com/wp-content/uploads/2019/03/IMG_1647-1.jpg",
-        altText: 'Slide 2',
-        caption: 'Slide 2'
-    },
-    {
-        src: "http://cdn.coverstand.com/11092/688194/article_assets/dd7d7f376c6c1e9f7cee5a3cc7a42276266cfde4.jpg",
-        altText: 'Slide 3',
-        caption: 'Slide 3'
-    }
-];
+function Introslider() {
+    return (
+        <Carousel
+            fade controls={false}
+            indicators={false}
+        >
 
 
+            <Carousel.Item interval={10000}>
+
+                <Image
+
+                    // layout="fill"
+                    fluid={true}
+                    className="d-block w-100"
+                    style={{height:"50vh"}}
+                    // src={armaflex}
+                    src="https://www.celebritycruises.com/blog/content/uploads/2021/02/alaska-mountains-hero-denali-1920x890.jpg"
+                    alt="First slide"
 
 
+                ></Image>
 
-class Introslider extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { activeIndex: 0 };
-        this.next = this.next.bind(this);
-        this.previous = this.previous.bind(this);
-        this.goToIndex = this.goToIndex.bind(this);
-        this.onExiting = this.onExiting.bind(this);
-        this.onExited = this.onExited.bind(this);
-    }
 
-    onExiting() {
-        this.animating = true;
-    }
-
-    onExited() {
-        this.animating = false;
-    }
-
-    next() {
-        if (this.animating) return;
-        const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
-        this.setState({ activeIndex: nextIndex });
-    }
-
-    previous() {
-        if (this.animating) return;
-        const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
-        this.setState({ activeIndex: nextIndex });
-    }
-
-    goToIndex(newIndex) {
-        if (this.animating) return;
-        this.setState({ activeIndex: newIndex });
-    }
-
-    render() {
-        const { activeIndex } = this.state;
-
-        const slides = items.map((item) => {
-            return (
-                <CarouselItem
-                    onExiting={this.onExiting}
-                    onExited={this.onExited}
-                    key={item.src}
-                    interval="20"
-
-                >
-                    <img className="w-100" style={{ height: "100%" }} src={item.src} alt={item.altText} />
-                    {/* <Image src={item.src} layout="fill" alt={item.altText} /> */}
-
-                    {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
-                </CarouselItem>
-            );
-        });
+                {/* <Carousel.Caption><h3>First slide label</h3><p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p></Carousel.Caption> */}
+            </Carousel.Item>
 
 
 
-        return (
-            <Carousel className="carousel-fade"
-                activeIndex={activeIndex}
-                next={this.next}
-                previous={this.previous}
-            >
-                {/* <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} /> */}
-                {slides}
-                <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-                <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-            </Carousel>
-        );
-    }
+
+            <Carousel.Item interval={10000}>
+                <Image
+                    fluid={true}
+                    // layout="fill"
+                    style={{height:"50vh"}}
+                    className="d-block w-100"
+                    src="https://img.uhdpaper.com/wallpaper/anime-girl-art-652@0@f-thumb.jpg?dl"
+                    alt="Second slide"
+                ></Image>
+            </Carousel.Item>
+
+
+
+            <Carousel.Item interval={10000}>
+                <Image
+                    fluid={true}
+                    style={{height:"50vh"}}
+                    // layout="fill"
+                    className="d-block w-100"
+                    src="https://cdn.mos.cms.futurecdn.net/TPbXrbKxUtvyVWL9hk6VYb-1920-80.jpg.webp"
+                    alt="Third slide"
+                ></Image>
+            </Carousel.Item>
+
+
+
+
+        </Carousel>
+    );
 }
-
 
 export default Introslider;
