@@ -61,10 +61,10 @@ export default class Toolbar extends React.Component {
 
         <NavbarToggler onClick={this.toggle} />
 
-        <Collapse isOpen={this.state.isOpen} navbar style={{ backgroundColor: "" }}>
+        <Collapse isOpen={this.state.isOpen} navbar>
 
 
-          <Nav className={styles.navlinks} navbar style={{ backgroundColor: "" }}>
+          <Nav className={styles.navlinks} navbar>
 
 
             <NavItem>
@@ -83,9 +83,15 @@ export default class Toolbar extends React.Component {
               <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/contact">Contact Us</NavLink>
             </NavItem>
 
-            <NavItem style={{ backgroundColor: "" }}>
+            <NavItem>
               <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/quote">Get a Quote</NavLink>
             </NavItem>
+
+            
+            {/* <NavItem>
+              <NavLink className={styles.navlinky} style={{ paddingTop: "15px", paddingBottom: "15px", paddingLeft: "25px", paddingRight: "25px" }} href="/quote">wjbestinsulation@gmail.com</NavLink>
+            </NavItem> */}
+
 
 
             <NavItem className="ms-auto">

@@ -1,22 +1,33 @@
 .navbrand {
     background-color: pink;
-    /* margin-left: 25px; */
+    margin-left: 25px;
 }
 
 
 
 .navlinks {
-    /* background-color: blue; */
+    background-color: blue;
     margin-left: 20%;
     width:100%;
-
 }
 
 
-.navlinky{
-    /* background-color: purple; */
-    font-weight: 800;
 
+.navlinky{
+    background-color: purple;
+    font-weight: 800;
+}
+
+.navlinky:hover{
+    background-color: whitesmoke;
+    /* transition: .5s all ease; */
+    border-bottom: 1px solid black;
+}
+
+
+
+.phoneLink{
+    background-color: orange;
 }
 
 .phoneLink:hover{
@@ -27,11 +38,4 @@
     font-weight: 800;
     margin-left: 10px;
     color: rgb(16, 90, 250);
-}
-
-.navlinky:hover{
-    background-color: whitesmoke;
-    /* transition: .5s all ease; */
-    border-bottom: 1px solid black;
-
 }
