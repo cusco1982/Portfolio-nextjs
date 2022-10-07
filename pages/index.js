@@ -274,32 +274,39 @@ export default function Home() {
 
 
       <Row style={{ backgroundColor: "red", padding: "0", margin: "0" }}>
+
+
+
+
         <Col lg="8" style={{ height: "200px", backgroundColor: "blue", padding: "0", marginTop: "40px", marginBottom: "80px", marginLeft: "auto", marginRight: "auto" }}>
-          {/* <Slider /> */}
 
 
-          <Row>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
-          </Row>
-
-          <Row>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
-          </Row>
-
-          <Row>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
-            <Col><Image src={armaflex} layout="intrinsic"></Image></Col>
+          <Row style={{ margin: "0", height: "calc(100%/3)" }}>
+            <Col lg="4" style={{ backgroundColor: "green" }}>hello</Col>
+            <Col lg="4" style={{ backgroundColor: "orange" }}>hello</Col>
+            <Col lg="4" style={{ backgroundColor: "green" }}>hello</Col>
           </Row>
 
 
+          <Row style={{ margin: "0", height: "calc(100%/3)" }}>
+            <Col lg="4" style={{ backgroundColor: "orange" }}>hello</Col>
+            <Col lg="4" style={{ backgroundColor: "green" }}>hello</Col>
+            <Col lg="4" style={{ backgroundColor: "orange" }}>hello</Col>
+          </Row>
+
+          <Row style={{ margin: "0", height: "calc(100%/3)" }}>
+            <Col lg="4" style={{ backgroundColor: "green" }}>hello</Col>
+            <Col lg="4" style={{ backgroundColor: "orange" }}>hello</Col>
+            <Col lg="4" style={{ backgroundColor: "green" }}>hello</Col>
+          </Row>
 
 
         </Col>
+
+
+
+
+
       </Row>
 
 
