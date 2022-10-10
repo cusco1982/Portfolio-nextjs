@@ -246,23 +246,17 @@ export default function Home() {
 
 
               <Row className="h-50" style={{ backgroundColor: "white", margin: "0", padding: "0" }}>
-                <Col style={{ backgroundColor: "black", padding: "20px" }}>
-                  <Row style={{ margin: "0", height: "calc(100%/3)" }}>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={armaflex} alt="alt" layout="fill"></Image></Col>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={verticalpicture} alt="alt" layout="fill"></Image></Col>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={verticalDuct} alt="alt" layout="fill"></Image></Col>
+                <Col style={{ backgroundColor: "black", padding: "20px", paddingLeft:"10px" }}>
+                  <Row style={{ margin: "0", height: "50%" }}>
+                    <Col style={{ position: "relative" }}><Image src={armaflex} alt="alt" layout="fill"></Image></Col>
+                    <Col style={{ position: "relative" }}><Image src={verticalpicture} alt="alt" layout="fill"></Image></Col>
                   </Row>
-                  <Row style={{ margin: "0", height: "calc(100%/3)" }}>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={pipingHall} alt="alt" layout="fill"></Image></Col>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={armaflex} alt="alt" layout="fill"></Image></Col>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={verticalTank} alt="alt" layout="fill"></Image></Col>
-                  </Row>
-                  <Row style={{ margin: "0", height: "calc(100%/3)" }}>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={verticalpicture} alt="alt" layout="fill"></Image></Col>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={verticalDuct} alt="alt" layout="fill"></Image></Col>
-                    <Col lg="4" style={{ position: "relative" }}><Image src={pipingHall} alt="alt" layout="fill"></Image></Col>
+                  <Row style={{ margin: "0", height: "50%" }}>
+                    <Col style={{ position: "relative" }}><Image src={verticalDuct} alt="alt" layout="fill"></Image></Col>
+                    <Col style={{ position: "relative" }}><Image src={verticalTank} alt="alt" layout="fill"></Image></Col>
                   </Row>
                 </Col>
+
 
                 <Col style={{ backgroundColor: "purple", margin: "auto", textAlign: "center" }}>
                   <a href="/projects"><button style={{ padding: "20px", margin: "auto" }}>View all Projects</button></a>
