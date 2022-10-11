@@ -224,9 +224,10 @@ export default function Home() {
 
 
 
-            <Col style={{ textAlign: "center", backgroundColor: "red", margin: "0", padding: "20px" }}>
+            <Col style={{ textAlign: "center", backgroundColor: "red", margin: "0", padding: "20px", position:"relative" }}>
 
-              <Slider />
+              <Image  src={verticalDuct} alt="alt" height={100} width={100} layout="responsive"></Image>
+              {/* <Slider/> */}
 
             </Col>
 
@@ -246,21 +247,48 @@ export default function Home() {
 
 
               <Row className="h-50" style={{ backgroundColor: "white", margin: "0", padding: "0" }}>
-                <Col style={{ backgroundColor: "black", padding: "20px", paddingLeft:"10px" }}>
+
+
+
+
+              <Col style={{ backgroundColor: "black", padding: "5px", paddingBottom:"15px" }}>
+
+
+
                   <Row style={{ margin: "0", height: "50%" }}>
-                    <Col style={{ position: "relative" }}><Image src={armaflex} alt="alt" layout="fill"></Image></Col>
-                    <Col style={{ position: "relative" }}><Image src={verticalpicture} alt="alt" layout="fill"></Image></Col>
+                    <Col style={{ backgroundColor: "blue", padding: "0", position: "relative" }}>
+                      <div className={styles.imagePadding}><Image src={armaflex} alt="alt" layout="fill"></Image></div>
+                    </Col>
+
+                    <Col style={{ position: "relative", backgroundColor: "green", padding: "0" }}>
+                      <div className={styles.imagePadding}><Image className="myimage" src={verticalpicture} alt="alt" layout="fill"></Image></div>
+                    </Col>
                   </Row>
+
+
                   <Row style={{ margin: "0", height: "50%" }}>
-                    <Col style={{ position: "relative" }}><Image src={verticalDuct} alt="alt" layout="fill"></Image></Col>
-                    <Col style={{ position: "relative" }}><Image src={verticalTank} alt="alt" layout="fill"></Image></Col>
+                    <Col style={{ position: "relative", backgroundColor: "green", padding: "0" }}>
+                      <div className={styles.imagePadding}><Image className="myimage" src={verticalDuct} alt="alt" layout="fill"></Image></div>
+                    </Col>
+
+                    <Col style={{ position: "relative", backgroundColor: "blue", padding: "0" }}>
+                      <div className={styles.imagePadding}><Image className={styles.myimage} src={verticalTank} alt="alt" layout="fill"></Image></div>
+                    </Col>
                   </Row>
+
+
                 </Col>
 
 
-                <Col style={{ backgroundColor: "purple", margin: "auto", textAlign: "center" }}>
+
+
+
+
+
+                <Col style={{ backgroundColor: "purple", margin: "auto", textAlign: "center", padding: "0" }}>
                   <a href="/projects"><button style={{ padding: "20px", margin: "auto" }}>View all Projects</button></a>
                 </Col>
+
               </Row>
 
             </Col>
