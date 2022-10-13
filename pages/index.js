@@ -224,9 +224,9 @@ export default function Home() {
 
 
 
-            <Col style={{ textAlign: "center", backgroundColor: "red", margin: "0", padding: "20px", position:"relative" }}>
+            <Col style={{ textAlign: "center", backgroundColor: "red", margin: "0", padding: "0", position: "relative", height: "" }}>
 
-              <Image  src={verticalDuct} alt="alt" height={100} width={100} layout="responsive"></Image>
+              <Image src={verticalDuct} alt="alt" height={600} width={400} layout="fixed"></Image>
               {/* <Slider/> */}
 
             </Col>
@@ -237,12 +237,14 @@ export default function Home() {
             <Col style={{ backgroundColor: "orange" }}>
 
               <Row className="h-50" style={{ margin: "0", backgroundColor: "blue" }}>
+
                 <Row className="h-25" style={{ margin: "0", padding: "0" }}>
                   <h2 style={{ backgroundColor: "green", padding: "10px", margin: "0" }}>Commerical & Industrial Insulation Specialists</h2>
                 </Row>
-                <Row style={{ margin: "0", padding: "0" }}>
+                <Row style={{ margin: "0", padding: "0", height: "75%" }}>
                   <p style={{ backgroundColor: "pink", padding: "10px", margin: "0" }}>Our friendly professionals are true experts in the field, all of whom are dedicated to providing the highest customer service when completing a job.        We ensure that your mechanical system is insulated in the most efficient manner, and we guarantee satisfaction in each project completion. When you are ready to outfit your mechanical, commercial, or industrial insulation, trust the team at Breeding Insulation in Chattanooga. Call (423) 698-8019 today for your free quote.</p>
                 </Row>
+
               </Row>
 
 
@@ -250,35 +252,26 @@ export default function Home() {
 
 
 
+                {/*---- 4 image grid ------*/}
 
-              <Col style={{ backgroundColor: "black", padding: "5px", paddingBottom:"15px" }}>
-
-
-
+                <Col style={{ backgroundColor: "", padding: "0" }}>
                   <Row style={{ margin: "0", height: "50%" }}>
-                    <Col style={{ backgroundColor: "blue", padding: "0", position: "relative" }}>
-                      <div className={styles.imagePadding}><Image src={armaflex} alt="alt" layout="fill"></Image></div>
+                    <Col style={{ position: "relative", backgroundColor: "", padding: "0" }}>
+                      <div className={styles.imageContainer}><Image className={styles.myImage} src={armaflex} alt="alt" layout="fill"></Image></div>
                     </Col>
-
-                    <Col style={{ position: "relative", backgroundColor: "green", padding: "0" }}>
-                      <div className={styles.imagePadding}><Image className="myimage" src={verticalpicture} alt="alt" layout="fill"></Image></div>
+                    <Col style={{ position: "relative", backgroundColor: "", padding: "0" }}>
+                      <div className={styles.imageContainer}><Image className={styles.myImage} src={verticalpicture} alt="alt" layout="fill"></Image></div>
                     </Col>
                   </Row>
-
-
                   <Row style={{ margin: "0", height: "50%" }}>
-                    <Col style={{ position: "relative", backgroundColor: "green", padding: "0" }}>
-                      <div className={styles.imagePadding}><Image className="myimage" src={verticalDuct} alt="alt" layout="fill"></Image></div>
+                    <Col style={{ position: "relative", backgroundColor: "", padding: "0" }}>
+                      <div className={styles.imageContainer}><Image className={styles.myImage} src={verticalDuct} alt="alt" layout="fill"></Image></div>
                     </Col>
-
-                    <Col style={{ position: "relative", backgroundColor: "blue", padding: "0" }}>
-                      <div className={styles.imagePadding}><Image className={styles.myimage} src={verticalTank} alt="alt" layout="fill"></Image></div>
+                    <Col style={{ position: "relative", backgroundColor: "", padding: "0" }}>
+                      <div className={styles.imageContainer}><Image className={styles.myImage} src={verticalTank} alt="alt" layout="fill"></Image></div>
                     </Col>
                   </Row>
-
-
                 </Col>
-
 
 
 
