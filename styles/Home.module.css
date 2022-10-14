@@ -193,16 +193,17 @@ background-color: pink;
   margin: 5px;
   /* border: 1px solid black; */
   border-radius: 10px;
+}
 
+.imageContainer:hover{
+  border: 1px solid black;
 }
 
 .myImage{
   border-radius: 10px;
   transition: .5s ease;
-
 }
 
 .myImage:hover{
   opacity: 0.8;
-  border: 1px solid black;
 }
