@@ -35,15 +35,24 @@ export default function Home() {
   const names = [armaflex, verticalDuct, verticalTank, verticalpicture];
 
 
-  // const [image, setImage] = React.useState(0);
+  const [source, setSource] = React.useState(armaflex);
+  // const [source, setSource] = React.useState(names[key]);
 
-  function handleClick(i) {
-    // setImage(image.src == i)
+  // function handleClick(key) {
+  //   setSource(key)
 
-    console.log(i.key)
-  }
+  //   console.log(key);
+  //   console.log(source)
+  // }
 
 
+
+
+  // const handleClick = (key) => {
+
+  //   function sayHello(key) {
+  //     console.log(`hello, ${name}`);
+  //   }
 
 
 
@@ -226,12 +235,8 @@ export default function Home() {
 
             <Col style={{ textAlign: "center", backgroundColor: "red", margin: "0", padding: "0", position: "relative", height: "" }}>
 
-              <Image src={verticalDuct} alt="alt" height={600} width={400} layout="fixed"></Image>
-              {/* <Slider/> */}
 
-
-              {/* {image} */}
-
+              <Image className={styles.currentImage} src={source} alt="alt" height={600} width={400} layout="fixed"></Image>
 
 
             </Col>
@@ -258,47 +263,18 @@ export default function Home() {
 
               <Row className="h-50" style={{ backgroundColor: "white", margin: "0", padding: "0" }}>
 
+
                 {/*---- 4 image grid --------*/}
 
                 <Col style={{ backgroundColor: "", padding: "0" }}>
 
-
-                  {/* <Row style={{ margin: "0", height: "50%" }}>
-                    <Col style={{ position: "relative", backgroundColor: "", padding: "0" }}>
-                      <div className={styles.imageContainer}><Image className={styles.myImage} src={armaflex} alt="alt" layout="fill"></Image></div>
-                    </Col>
-                    <Col style={{ position: "relative", backgroundColor: "", padding: "0" }}>
-                      <div className={styles.imageContainer}><Image className={styles.myImage} src={verticalpicture} alt="alt" layout="fill"></Image></div>
-                    </Col>
-                  </Row>
-                  <Row style={{ margin: "0", height: "50%" }}>
-                    <Col style={{ position: "relative", backgroundColor: "", padding: "0" }}>
-                      <div className={styles.imageContainer}><Image className={styles.myImage} src={verticalDuct} alt="alt" layout="fill"></Image></div>
-                    </Col>
-                    <Col style={{ position: "relative", backgroundColor: "", padding: "0" }}>
-                      <div className={styles.imageContainer}><Image className={styles.myImage} src={verticalTank} alt="alt" layout="fill"></Image></div>
-                    </Col>
-                  </Row> */}
-
-
-
-
                   {names.map((name, i) => (
-
-
                     <div style={{ backgroundColor: "", float: 'left', position: "relative", height: "50%", width: "50%" }}>
-                      <div className={styles.imageContainer}><Image onClick={handleClick(i)} className={styles.myImage} key={i} src={name} alt="alt" layout="fill"></Image></div>
+                      <div className={styles.imageContainer}><Image onClick={() => setSource(name)} className={styles.myImage} key={i} src={name} alt="alt" layout="fill"></Image></div>
                     </div>
-
                   ))}
 
                 </Col>
-
-
-
-
-
-
 
 
                 <Col style={{ backgroundColor: "purple", margin: "auto", textAlign: "center", padding: "0" }}>
