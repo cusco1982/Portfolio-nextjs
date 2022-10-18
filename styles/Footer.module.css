@@ -1,4 +1,4 @@
-.contactrow{
+/* .contactrow{
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 }
@@ -25,10 +25,42 @@
 }
 .contactlink3:hover{
     border: 1px solid rgb(0, 44, 165);
+} */
+
+
+
+
+
+.footerCopyright{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-size: 15px;
 }
 
-.footersocial a{
+
+.footerTristate{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.footerSocial{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+.footerSocial a{
     padding-left: 5px;
     padding-right: 5px;
-
+    color: white;
 }
+
+
