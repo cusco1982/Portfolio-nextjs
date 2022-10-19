@@ -292,7 +292,7 @@ export default function Home() {
 
                 <Col style={{ backgroundColor: "", padding: "0" }}>
 
-                  {names.map((name, i) => (
+                  {names.map((name, key) => (
                     <div style={{ backgroundColor: "", float: 'left', position: "relative", height: "50%", width: "50%" }}>
                       <div className={styles.imageContainer}>
 
@@ -300,7 +300,7 @@ export default function Home() {
                         <Image
                           onMouseEnter={() => onMouseEnter(name)}
                           className={styles.myImage}
-                          key={i} src={name}
+                          key={key} src={name}
                           alt="alt"
                           layout="fill"
                         ></Image>
