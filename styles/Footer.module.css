@@ -72,6 +72,43 @@
 
 
 
+
+
+
+
+
+
+
+.footerPhone{
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+.footerPhone > div > a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    transition: 0.5s ease-in;
+    border-radius: 25px;
+}
+.footerPhone > div > a:hover{
+    background-color: whitesmoke;
+}
+.footerPhone > div > a > svg{
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
 .footerTristate{
     padding-bottom: 20px;
     margin: 0;
@@ -80,18 +117,12 @@
     font-weight: 400;
 }
 
-
-
-
 .footerCopyright{
     padding: 0;
     margin: 0;
     display: inline-block;
     font-size: 15px;
 }
-
-
-
 
 .footerSocial{
     padding: 0;
