@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Col, Row } from 'reactstrap';
 import styles from '../styles/Footer.module.css';
 
+import { useRouter } from 'next/router';
+
 
 const Footer = () => {
+
+
+
+    const router = useRouter();
+
+
+
+
+
     return (
         <Col className={styles.footerWrapper}>
 
@@ -20,11 +31,15 @@ const Footer = () => {
                 <Row className={styles.footerLinksContainer}>
 
                     <div>
-                        <a href="/"><div>Home</div></a>
-                        <a href="/"><div>Services</div></a>
-                        <a href="/"><div>Gallery</div></a>
-                        <a href="/"><div>Quote</div></a>
-                        <a href="/"><div>Contact</div></a>
+
+
+                        <a href="/"><div className={router.pathname == "/" ? styles.active : ""}>Home</div></a>
+                        <a href="/services"><div className={router.pathname == "/services" ? styles.active : ""}>Services</div></a>
+                        <a href="/projects"><div className={router.pathname == "/projects" ? styles.active : ""}>Gallery</div></a>
+                        <a href="/quote"><div className={router.pathname == "/quote" ? styles.active : ""}>Quote</div></a>
+                        <a href="/contact"><div className={router.pathname == "/contact" ? styles.active : ""}>contact</div></a>
+
+
                     </div>
 
                 </Row>

@@ -39,11 +39,9 @@ export default function Home() {
 
   const onMouseEnter = (name) => {
 
-
     if (name != source) {
-
+      // --> if name != source && asyncCall() not running <--
       // add eventlistener if onMouseEnter again with new value then return, cancel current function running
-
       function resolveAfter2Seconds() {
         return new Promise(resolve => {
           setClass(styles.nextImage)
@@ -53,8 +51,6 @@ export default function Home() {
         });
       }
 
-
-
       async function asyncCall() {
         const result = await resolveAfter2Seconds();
         console.log(result);
@@ -63,8 +59,6 @@ export default function Home() {
       }
       asyncCall();
     }
-
-
     //  else{return;}
   }
 
