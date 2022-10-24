@@ -11,18 +11,6 @@ const Layout = ({ children }) => {
 
 
 
-
-    // useEffect(() => {
-    
-    //     console.log(window.location.href)
-    //     const homeLink = document.querySelector("homelink");
-    //     homeLink.addClass
-    
-    //   }, []);
-
-
-
-
     return (
 
         <>
