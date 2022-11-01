@@ -1,10 +1,10 @@
-// import Toolbar from './Toolbar.js'
+import Toolbar from './Toolbar.js'
 import Footer from './Footer.js';
 import styles from '../styles/Layout.module.css';
-import Navbar from './Navbar.jsx';
 
 
-import React, { useEffect } from 'react';
+
+// import React, { useEffect } from 'react';
 
 
 
@@ -17,9 +17,8 @@ const Layout = ({ children }) => {
 
         <>
 
-            <Navbar />
         
-            {/* <Toolbar /> */}
+            <Toolbar />
 
             <div className={styles.container}>
 
