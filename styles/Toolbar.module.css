@@ -1,32 +1,41 @@
 
 
 
+.navContainer{
+    margin: 0 !important;
+    padding: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
+    height: 100px;
+    background-color: purple;
+}
+
+
+
+
+
+
+
+
+
 .navbrand {
     background-color: pink;
     margin: auto;
-
 }
-
-
 
 
 .navbrand div{
-
     display: inline-block;
     background-color: red;
-    
 }
-
-
 
 
 .navbrand div a{
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     text-decoration: none;
-    display: flex;
-
-    
+    display: flex;    
 }
 
 
@@ -48,44 +57,33 @@
     background-color: yellow;
     margin: auto;
     padding: 0;
-    
-
 }
 
 .navlinks div{
     background-color: red;
     display: flex;
-
 }
 
 .navlinks div div{
     background-color: white;
     margin: 2px;
-
 }
 
-
-
 .navlinks div div a{
-
     font-weight: 500;
     text-decoration: none;
-
     background-color: black;
-
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: .5s all ease;
     /* border-radius: 15px; */
-    
 }
 
 .navlinks div div a:hover{
     background-color: white;
     border-bottom: 1px solid black;
-
 }
 
 
@@ -101,23 +99,17 @@
 
 .phoneLink{
     background-color: blue;
-
     margin: auto;
-
-
 }
 
 .phoneLink div{
     text-align: right;
-
     background-color: white;
 }
 
-
 .phoneLink div a{
-    background-color: orange;
-
-    
+    background-color: #617f97;
+    text-decoration: none;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 25px;
@@ -125,16 +117,12 @@
     border-radius: 25px;
     transition: 0.2s ease-in;
     color: black;
-    
-
 }
-
 
 .phoneLink div a:hover{
     background-color: black;
     color: white;
 }
-
 
 .phoneLink div a b{
     font-weight: 600;
