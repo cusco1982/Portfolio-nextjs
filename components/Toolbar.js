@@ -32,8 +32,14 @@ const Toolbar = () => {
 
 
 
+  // var navHeight = document.getElementById('navcontainer').offsetHeight;
+  // console.log(navHeight);
+
+
+
+
   return (
-    <div style={{position:'fixed', top:"0", width:"100%", zIndex:"10"}}>
+    <div className={styles.navComponent}>
       <Head>
         <title>Nav</title>
       </Head>
@@ -42,7 +48,7 @@ const Toolbar = () => {
 
 
 
-      <Row className={styles.navContainer}>
+      <Row id="navcontainer" className={styles.navContainer}>
 
         <div style={{ display: 'flex' }}>
 

@@ -1,14 +1,23 @@
 
 
+.navComponent{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    
+}
+
+
+
+
 
 .navContainer{
     margin: 0 !important;
     padding: 0;
-    /* position: fixed; */
-    /* top: 0; */
-    /* width: 100%; */
-    height: 100px;
     background-color: purple;
+    height: 100px;
+
 }
 
 
