@@ -1,5 +1,6 @@
 import Head from 'next/head'
 // import React from 'react';
+
 import { Row, Col } from 'reactstrap';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -32,10 +33,6 @@ const Toolbar = () => {
 
 
 
-  // var navHeight = document.getElementById('navcontainer').offsetHeight;
-  // console.log(navHeight);
-
-
 
 
   return (
@@ -48,7 +45,7 @@ const Toolbar = () => {
 
 
 
-      <Row id="navcontainer" className={styles.navContainer}>
+      <Row id="navContainer" className={styles.navContainer}>
 
         <div style={{ display: 'flex' }}>
 
@@ -126,14 +123,35 @@ const Toolbar = () => {
 
 
 
-          <Col className="d-lg-none d-md-none" style={{ backgroundColor: "red" }}>
+          <Col lg="2" className="d-lg-none d-md-none" style={{ backgroundColor: "green", display: "flex" }}>
 
 
-            <Button variant="primary" onClick={handleShow}>
-              <div></div>
-              <div></div>
-              <div></div>
-            </Button>
+
+            <div style={{
+              backgroundColor: "blue", margin: "auto"
+
+              // marginLeft: "auto", marginTop:"auto", marginBottom:"auto"
+
+            }}>
+
+              {/* <Button className={styles.burgerIcon} onClick={handleShow}> */}
+
+              <div className={styles.burgerIcon} onClick={handleShow}>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
+
+
+              </div>
+
+
+
+              {/* </Button> */}
+
+
+            </div>
+
 
             <Offcanvas show={show} onHide={handleClose}>
 
@@ -151,6 +169,10 @@ const Toolbar = () => {
               </Offcanvas.Body>
 
             </Offcanvas>
+
+
+
+
 
 
 

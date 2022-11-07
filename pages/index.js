@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import Head from 'next/head'
 import { Row, Col } from 'reactstrap';
 import Image from 'next/image';
-// import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 
 

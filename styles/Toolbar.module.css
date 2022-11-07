@@ -13,6 +13,7 @@
 
 
 .navContainer{
+
     margin: 0 !important;
     padding: 0;
     background-color: purple;
@@ -145,7 +146,6 @@
 
 
 
-
 @media screen and (max-width: 768px) {
     .navlinks{
         display: none;
@@ -154,4 +154,17 @@
     .phoneLink{
         display: none;
     }
+}
+
+
+
+
+
+
+
+.burgerIcon{
+
+background-color: white;
+/* margin-right: 20px; */
+
 }
