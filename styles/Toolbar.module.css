@@ -163,8 +163,40 @@
 
 
 .burgerIcon{
-
 background-color: white;
-/* margin-right: 20px; */
+}
 
+.burgerIcon:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.offCanvasBody ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+.offCanvasBody ul li{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.offCanvasBody ul li a{
+    text-decoration: none;
+}
+
+.active{
+
+    padding: 10px;
+    border-bottom: 2px solid black;
 }

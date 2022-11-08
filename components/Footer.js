@@ -37,7 +37,7 @@ const Footer = () => {
                         <a href="/services"><div className={router.pathname == "/services" ? styles.active : ""}>Services</div></a>
                         <a href="/projects"><div className={router.pathname == "/projects" ? styles.active : ""}>Gallery</div></a>
                         <a href="/quote"><div className={router.pathname == "/quote" ? styles.active : ""}>Quote</div></a>
-                        <a href="/contact"><div className={router.pathname == "/contact" ? styles.active : ""}>contact</div></a>
+                        <a href="/contact"><div className={router.pathname == "/contact" ? styles.active : ""}>Contact</div></a>
 
 
                     </div>

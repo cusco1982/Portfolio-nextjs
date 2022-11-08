@@ -8,13 +8,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import styles from "../styles/Toolbar.module.css";
 
-
-
-
-// import { useRouter } from 'next/router';
-// const router = useRouter();
-// <a href="/"><div className={router.pathname == "/" ? styles.active : ""}>Home</div></a>
-
+import { useRouter } from 'next/router';
 
 
 
@@ -30,6 +24,9 @@ const Toolbar = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+
+
+  const router = useRouter();
 
 
 
@@ -127,30 +124,21 @@ const Toolbar = () => {
 
 
 
-            <div style={{
-              backgroundColor: "blue", margin: "auto"
-
-              // marginLeft: "auto", marginTop:"auto", marginBottom:"auto"
-
-            }}>
-
-              {/* <Button className={styles.burgerIcon} onClick={handleShow}> */}
-
-              <div className={styles.burgerIcon} onClick={handleShow}>
+            <div style={{backgroundColor: "blue", margin: "auto"}}>
 
 
+
+              <div className={styles.burgerIcon} onClick={handleShow} title="Menu">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
-
 
               </div>
 
 
 
-              {/* </Button> */}
-
-
             </div>
+
+
 
 
             <Offcanvas show={show} onHide={handleClose}>
@@ -159,12 +147,12 @@ const Toolbar = () => {
                 <Offcanvas.Title>WJ Best Insulation</Offcanvas.Title>
               </Offcanvas.Header>
 
-              <Offcanvas.Body>
+              <Offcanvas.Body className={styles.offCanvasBody}>
                 <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/">Services</a></li>
-                  <li><a href="/">Gallery</a></li>
-                  <li><a href="/">Contact</a></li>
+                  <li><a href="/" className={router.pathname == "/" ? styles.active : ""}>Home</a></li>
+                  <li><a href="/services" className={router.pathname == "/services" ? styles.active : ""}>Services</a></li>
+                  <li><a href="/gallery" className={router.pathname == "/gallery" ? styles.active : ""}>Gallery</a></li>
+                  <li><a href="/contact" className={router.pathname == "/contact" ? styles.active : ""}>Contact</a></li>
                 </ul>
               </Offcanvas.Body>
 
