@@ -67,6 +67,61 @@ export default function Home() {
 
 
 
+
+
+
+
+  useEffect(() => {
+
+    var a = 0;
+
+
+    window.addEventListener('scroll', function () {
+
+
+      var oTop = document.getElementById("counter").offsetTop - window.innerHeight;
+
+
+
+      if (a == 0 && window.pageYOffset > oTop) {
+
+        let valueDisplays = document.querySelectorAll("#num");
+        let interval = 10000;
+        valueDisplays.forEach((valueDisplay) => {
+          let startValue = 0;
+          let endValue = parseInt(valueDisplay.getAttribute("data-value"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function () {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+              clearInterval(counter);
+            }
+          }, duration);
+        })
+        a = 1;
+
+      }
+
+
+
+
+    });
+
+
+
+  });
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div>
       <Head>
@@ -108,7 +163,7 @@ export default function Home() {
 
         <Col lg="4" style={{ backgroundColor: "green", display: "", padding: "0", margin: "0", height: "100%" }}>
 
-          <h2 style={{ padding: "" }}><button style={{ backgroundColor: "orange" }}>About Us</button></h2>
+          <h2 style={{ padding: "" }}><a href="/about" style={{ backgroundColor: "orange", textDecoration: "none", color: "black", border: "1px solid black", padding: "5px" }}>About Us</a></h2>
           <h2 style={{ backgroundColor: "red", marginTop: "20px", color: 'blue', marginBottom: "30px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
           <p style={{ backgroundColor: "", marginTop: "40px", marginBottom: "20px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numbusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
 
@@ -243,21 +298,12 @@ export default function Home() {
             <Col style={{ textAlign: "center", backgroundColor: "red", margin: "0", padding: "0", position: "relative", height: "" }}>
 
 
-
-              {/*--------- WORKING HERE  ----------*/}
-
-
-
-              <Image className={imageClass} src={source} alt="alt" height={600} width={400} layout="fixed"></Image>
-
-
-
-
-
-
+              <Image className={imageClass} src={source} alt="alt" height={400} width={400} layout="fixed"></Image>
 
 
             </Col>
+
+
 
 
 
@@ -288,8 +334,9 @@ export default function Home() {
 
                   {names.map((name, key) => (
                     <div style={{ backgroundColor: "", float: 'left', position: "relative", height: "50%", width: "50%" }}>
-                      <div className={styles.imageContainer}>
 
+
+                      <div className={styles.imageContainer}>
 
                         <Image
                           onMouseEnter={() => onMouseEnter(name)}
@@ -299,8 +346,9 @@ export default function Home() {
                           layout="fill"
                         ></Image>
 
-
                       </div>
+
+
                     </div>
                   ))}
 

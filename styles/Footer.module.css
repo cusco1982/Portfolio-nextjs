@@ -69,8 +69,15 @@
     opacity: 1;   
 }
 
+.footerLinksContainer > div > a > div{
+    padding: 6px;
+}
 
 
+
+.active{
+    border-bottom: 3px solid black;
+}
 
 
 
@@ -134,11 +141,4 @@
     padding-left: 5px;
     padding-right: 5px;
     color: white;
-}
-
-
-
-
-.active{
-    border-bottom: 3px solid black;
 }

@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 
     useEffect(() => {
         var navHeight = document.getElementById('navContainer').offsetHeight;
-        console.log(navHeight);
+        // console.log(navHeight);
 
         var mainContent = document.getElementById("mainContainer");
         mainContent.style.marginTop = navHeight + "px";

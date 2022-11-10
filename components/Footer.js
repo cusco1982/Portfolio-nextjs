@@ -82,7 +82,7 @@ const Footer = () => {
 
 
 
-                <Row style={{ backgroundColor: "", paddingTop: "15px", paddingBottom: "15px", margin: "0" }}>
+                <Row style={{ backgroundColor: "", paddingTop: "30px", paddingBottom: "30px", margin: "0" }}>
                     <div style={{ padding: "0", margin: "0" }}>
 
                         <div className={styles.footerCopyright}><div>© 2022 WJ Best Insulation LLC. All Rights Reserved.</div></div>
