@@ -151,7 +151,7 @@
     .navlinks{
         display: none;
     }
-
+    
     .phoneLink{
         display: none;
     }
@@ -164,13 +164,21 @@
 
 
 .burgerIcon{
-background-color: white;
+    background-color: white;
+    transition: 1s ease all;
+    border-radius: 8px;
 }
 
 .burgerIcon:hover{
     cursor: pointer;
 }
 
+.burgerActive{
+    /* display: none; */
+    opacity: 0;
+    transition: 1s ease all;
+    pointer-events: none;
+}
 
 
 
