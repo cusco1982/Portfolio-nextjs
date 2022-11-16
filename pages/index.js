@@ -10,6 +10,11 @@ import Slider from "../components/Slider.js";
 import Introslider from "../components/Introslider.js";
 
 
+
+
+
+
+
 import armaflex from "../photos/armaflex.jpeg";
 import verticalpicture from "../photos/IMG_2315.JPG";
 import verticalDuct from "../photos/vertical/verticalDuct.JPG";
@@ -18,6 +23,10 @@ import pipingHall from "../photos/vertical/pipingHallway.JPG";
 import verticalTank from "../photos/vertical/verticalTanks.JPG";
 
 
+// import ducticon from "../photos/ducticon.png";
+import ductwrap from "../photos/ductwrap.jpeg";
+import istock from "../photos/istock.jpg";
+import roofpiping from "../photos/roofpiping.jpeg";
 
 
 
@@ -31,7 +40,8 @@ export default function Home() {
 
 
   //landing grid images
-  const names = [armaflex, verticalDuct, verticalTank, verticalpicture];
+  const names = [armaflex, verticalDuct, verticalTank, verticalpicture, pipingHall, ductwrap, istock, roofpiping];
+
   const [source, setSource] = React.useState(armaflex);
 
 
@@ -70,21 +80,11 @@ export default function Home() {
 
 
 
-
   useEffect(() => {
-
     var a = 0;
-
-
     window.addEventListener('scroll', function () {
-
-
       var oTop = document.getElementById("counter").offsetTop - window.innerHeight;
-
-
-
       if (a == 0 && window.pageYOffset > oTop) {
-
         let valueDisplays = document.querySelectorAll("#num");
         let interval = 10000;
         valueDisplays.forEach((valueDisplay) => {
@@ -100,16 +100,8 @@ export default function Home() {
           }, duration);
         })
         a = 1;
-
       }
-
-
-
-
     });
-
-
-
   });
 
 
@@ -144,7 +136,7 @@ export default function Home() {
           <div style={{ borderTop: "1px solid #4db2ec", width: "10%", padding: "10px", margin: "auto" }}></div>
           <p style={{ backgroundColor: "", padding: "20px" }}>We believe that the satisfaction and safety of our <br /> customers is our #1 Priority.</p>
 
-          <div style={{ position: "absolute", zIndex: "1", left: "0", right: "0", backgroundColor: "red" }} href="/quote">
+          <div style={{ position: "absolute", zIndex: "1", left: "0", right: "0", backgroundColor: "" }} href="/quote">
             <a style={{ textDecoration: "none" }} href="/quote"><button className={styles.quotebutton} style={{ backgroundColor: "", padding: "20px" }}>GET A QUOTE</button></a>
           </div>
 
@@ -161,14 +153,14 @@ export default function Home() {
 
 
 
-        <Col lg="4" style={{ backgroundColor: "green", display: "", padding: "0", margin: "0", height: "100%" }}>
+        <Col lg="4" style={{ backgroundColor: "", display: "", padding: "0", margin: "0", height: "100%" }}>
 
           <h2 style={{ padding: "" }}><a href="/about" style={{ backgroundColor: "orange", textDecoration: "none", color: "black", border: "1px solid black", padding: "5px" }}>About Us</a></h2>
-          <h2 style={{ backgroundColor: "red", marginTop: "20px", color: 'blue', marginBottom: "30px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
+          <h2 style={{ backgroundColor: "", marginTop: "20px", color: 'blue', marginBottom: "30px" }}>We are the leading experts in <br /> Mechanical Insulation Solutions</h2>
           <p style={{ backgroundColor: "", marginTop: "40px", marginBottom: "20px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, numbusdam perspiciatis!quam neque. Tempora dolorum, accusamus iusto voluptatem recusandae suscipit quod aperiam sequi dicta necessitatibus nemo quis, similique earum, unde quibusdam perspiciatis!</p>
 
-          <div style={{ display: 'flex', backgroundColor: "red", padding: "10px", marginTop: "40px", marginBottom: "40px" }}>
-            <Col style={{ backgroundColor: "black" }}>
+          <div style={{ display: 'flex', backgroundColor: "", padding: "10px", marginTop: "40px", marginBottom: "40px" }}>
+            <Col style={{ backgroundColor: "" }}>
               <h1 style={{ color: "orange" }}>454 m</h1>
               <div style={{ color: "blue" }}>Delivery Packages</div>
             </Col>
@@ -195,54 +187,60 @@ export default function Home() {
       </Row>
 
 
+
+
+
+
+
+
+
+
+
+
       {/* Services ----------------------------------------------------------------------------*/}
 
 
+      <div style={{ backgroundColor: "whitesmoke", paddingTop: "60px", paddingBottom: "60px" }}>
 
-      <Row style={{ backgroundColor: "orange", marginTop: "0", padding: "0", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
-        <Col>
 
-          <h1 style={{ padding: "40px", margin: "0", backgroundColor: "red" }}>SERVICES WE PROVIDE</h1>
-
-          <div style={{ padding: "0", margin: "0", backgroundColor: "green" }}>Best Insulation can help you find the solution to all your HVAC needs.</div>
-
-        </Col>
-      </Row>
-
+        <Row style={{ backgroundColor: "", marginTop: "0", padding: "0", justifyContent: "", textAlign: "center", fontSize: "20px" }}>
+          <Col>
+            <h1 style={{ paddingBottom: "40px", margin: "0", backgroundColor: "" }}>SERVICES WE PROVIDE</h1>
+            <div style={{ padding: "0", margin: "0", backgroundColor: "" }}>Best Insulation can help you find the solution to all your HVAC needs.</div>
+          </Col>
+        </Row>
 
 
 
 
 
 
-
-      {/* grid */}
-      <Row style={{ padding: "40px", margin: "40px", backgroundColor: "blue" }}>
-        <Col lg="8" style={{ padding: "0", margin: "auto", backgroundColor: "red" }}>
-          <Row style={{ padding: "0", margin: "0" }}>
-            <Col>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Chilled-water Piping</p></div></Row>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Refrigeration Piping</p></div></Row>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Plumbing Piping</p></div></Row>
-            </Col>
-            <Col>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Boilers</p></div></Row>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>HVAC Duct</p></div></Row>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Fire-Rated Grease Ducting</p></div></Row>
-            </Col>
-            <Col>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Tanks</p></div></Row>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Pressure Vessels</p></div></Row>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Process Piping</p></div></Row>
-            </Col>
-            <Col>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Breachings</p></div></Row>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Sound Applications</p></div></Row>
-              <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Maintenance</p></div></Row>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        <Row style={{ padding: "40px", margin: "40px", backgroundColor: "" }}>
+          <Col lg="8" style={{ padding: "0", margin: "auto", backgroundColor: "" }}>
+            <Row style={{ padding: "0", margin: "0" }}>
+              <Col>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Chilled-water Piping</p></div></Row>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Refrigeration Piping</p></div></Row>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Plumbing Piping</p></div></Row>
+              </Col>
+              <Col>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Boilers</p></div></Row>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>HVAC Duct</p></div></Row>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Fire-Rated Grease Ducting</p></div></Row>
+              </Col>
+              <Col>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Tanks</p></div></Row>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Pressure Vessels</p></div></Row>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Process Piping</p></div></Row>
+              </Col>
+              <Col>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Breachings</p></div></Row>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Sound Applications</p></div></Row>
+                <Row className={styles.services}><div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" /></svg><p>Maintenance</p></div></Row>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
 
 
@@ -250,14 +248,15 @@ export default function Home() {
 
 
 
-      <Row style={{ backgroundColor: "red", textAlign: "center", fontSize: "20px" }}>
-        <div>Have a question about a service we provide? Give us a call! We're happy to answer any questions you may have.</div>
-      </Row>
+        <Row style={{ backgroundColor: "", textAlign: "center", fontSize: "20px" }}>
+          <div>Have a question about a service we provide? Give us a call! We're happy to answer any questions you may have.</div>
+        </Row>
 
 
 
 
 
+      </div>
 
 
 
@@ -272,10 +271,12 @@ export default function Home() {
       {/* new gallery slider ------------------------------------------------------------------------------------------------------------------------------ */}
 
 
-      <Row style={{ backgroundColor: "black", padding: "0", margin: "0", marginTop: "80px" }}>
 
 
-        <Col lg="10" style={{ backgroundColor: "orange", padding: "0px", margin: "auto" }}>
+      <Row style={{ backgroundColor: "black", padding: "0", margin: "0", marginTop: "60px" }}>
+
+
+        <Col lg="10" style={{ backgroundColor: "", padding: "0px", margin: "auto" }}>
 
 
 
@@ -289,7 +290,7 @@ export default function Home() {
 
 
 
-          <Row style={{ backgroundColor: "pink", padding: "20px", margin: "0" }}>
+          <Row style={{ backgroundColor: "", padding: "20px", margin: "0" }}>
 
 
 
@@ -308,32 +309,34 @@ export default function Home() {
 
 
 
-            <Col style={{ backgroundColor: "orange" }}>
+            <Col style={{ backgroundColor: "" }}>
 
 
 
 
-              <Row className="h-50" style={{ margin: "0", backgroundColor: "blue" }}>
-                <Row className="h-25" style={{ margin: "0", padding: "0" }}>
-                  <h2 style={{ backgroundColor: "green", padding: "10px", margin: "0" }}>Commerical & Industrial Insulation Specialists</h2>
+              <Row style={{ margin: "0", backgroundColor: "blue", height: "50%" }}>
+
+                <Row style={{ margin: "0", padding: "0" }}>
+                  <h2 style={{ backgroundColor: "green", padding: "10px", margin: "0", fontSize:"1.5vw" }}>Commerical & Industrial Insulation Specialists</h2>
                 </Row>
-                <Row style={{ margin: "0", padding: "0", height: "75%" }}>
-                  <p style={{ backgroundColor: "pink", padding: "10px", margin: "0" }}>Our friendly professionals are true experts in the field, all of whom are dedicated to providing the highest customer service when completing a job.        We ensure that your mechanical system is insulated in the most efficient manner, and we guarantee satisfaction in each project completion. When you are ready to outfit your mechanical, commercial, or industrial insulation, trust the team at Breeding Insulation in Chattanooga. Call (423) 698-8019 today for your free quote.</p>
+                <Row style={{ margin: "0", padding: "0" }}>
+                  <p style={{ backgroundColor: "pink", padding: "10px", margin: "0", fontSize:".8vw" }}>Our friendly professionals are true experts in the field, all of whom are dedicated to providing the highest customer service when completing a job.        We ensure that your mechanical system is insulated in the most efficient manner, and we guarantee satisfaction in each project completion. When you are ready to outfit your mechanical, commercial, or industrial insulation, trust the team at Breeding Insulation in Chattanooga. Call (423) 698-8019 today for your free quote.</p>
                 </Row>
+
               </Row>
 
 
 
 
-              <Row className="h-50" style={{ backgroundColor: "white", margin: "0", padding: "0" }}>
+              <Row style={{ backgroundColor: "white", margin: "0", padding: "0", height: "50%" }}>
 
 
                 {/*---- 4 image grid --------*/}
 
-                <Col style={{ backgroundColor: "", padding: "0" }}>
+                <Col style={{ backgroundColor: "white", padding: "0" }}>
 
                   {names.map((name, key) => (
-                    <div style={{ backgroundColor: "", float: 'left', position: "relative", height: "50%", width: "50%" }}>
+                    <div style={{ backgroundColor: "", float: 'left', position: "relative", height: "50%", width: "25%" }}>
 
 
                       <div className={styles.imageContainer}>
@@ -355,9 +358,9 @@ export default function Home() {
                 </Col>
 
 
-                <Col style={{ backgroundColor: "purple", margin: "auto", textAlign: "center", padding: "0" }}>
+                {/* <Col style={{ backgroundColor: "purple", margin: "auto", textAlign: "center", padding: "0" }}>
                   <a href="/projects"><button style={{ padding: "20px", margin: "auto" }}>View all Projects</button></a>
-                </Col>
+                </Col> */}
 
               </Row>
 

@@ -16,7 +16,7 @@
 
     margin: 0 !important;
     padding: 0;
-    background-color: purple;
+    background-color: white;
     height: 100px;
 
 }
@@ -30,14 +30,14 @@
 
 
 .navbrand {
-    background-color: pink;
+    /* background-color: pink; */
     margin: auto;
 }
 
 
 .navbrand div{
     display: inline-block;
-    background-color: red;
+    /* background-color: red; */
 }
 
 
@@ -64,25 +64,25 @@
 
 
 .navlinks {
-    background-color: yellow;
+    /* background-color: yellow; */
     margin: auto;
     padding: 0;
 }
 
 .navlinks div{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
 }
 
 .navlinks div div{
-    background-color: white;
+    /* background-color: white; */
     margin: 2px;
 }
 
 .navlinks div div a{
     font-weight: 500;
     text-decoration: none;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -119,7 +119,7 @@
 }
 
 .phoneLink div a{
-    background-color: #617f97;
+    /* background-color: #617f97; */
     text-decoration: none;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -128,11 +128,13 @@
     border-radius: 25px;
     transition: 0.2s ease-in;
     color: black;
+    border: 1px solid white;
 }
 
 .phoneLink div a:hover{
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    border: 1px solid black;
+    /* color: white; */
 }
 
 .phoneLink div a b{
@@ -160,7 +162,21 @@
 
 
 
+.burgerContainer{
+    background-color: blue;
+    margin: auto;
+    transition: 1s;
+}
 
+.burgerContainerActive{
+    background-color: white;
+    margin: auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    transition: 1s ease all;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
 
 
 .burgerIcon{

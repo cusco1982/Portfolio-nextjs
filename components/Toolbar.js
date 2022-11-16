@@ -73,12 +73,16 @@ const Toolbar = () => {
 
 
 
-          <Col lg="2" className="d-lg-none d-md-none" style={{ backgroundColor: "green", display: "flex" }}>
-            <div style={{ backgroundColor: "blue", margin: "auto" }}>
+          <Col lg="2" className="d-lg-none d-md-none" style={{ backgroundColor: "", display: "flex" }}>
+
+
+            <div className={show === false ? styles.burgerContainer : styles.burgerContainerActive}>
               <div className={show === false ? styles.burgerIcon : styles.burgerActive} onClick={handleShow} title="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
               </div>
             </div>
+
+
 
             <Offcanvas show={show} onHide={handleClose}>
               <Offcanvas.Header closeButton>
