@@ -273,55 +273,70 @@ export default function Home() {
 
 
 
-      <Row style={{ backgroundColor: "black", padding: "0", margin: "0", marginTop: "60px" }}>
+      <Row className={styles.projectContainer}>
 
 
-        <Col lg="10" style={{ backgroundColor: "", padding: "0px", margin: "auto" }}>
+        <div>
 
 
 
-          <Row style={{ backgroundColor: "green", margin: "0", textAlign: "center", fontSize: "20px", padding: "20px" }}>
-            <h1 style={{ backgroundColor: "red", margin: "0" }}>PROJECTS</h1>
+
+          {/* OUR PROJECTS ROW -----*/}
+          <Row style={{ backgroundColor: "green", margin: "0", paddingLeft: "20px", paddingRight:"20px", paddingTop:"10px", paddingBottom:"10px" }}>
+
+            <Col style={{ backgroundColor: "red", display: "flex", margin: "auto", padding: "" }}><h1 style={{ backgroundColor: "red", margin: "0" }}>Our projects</h1></Col>
+            <Col style={{ backgroundColor: "orange", display: "flex", margin: "auto", padding: "", justifyContent: "end" }}><a href="/projects"><button style={{ fontSize: "20px", padding: "5px" }}>View all projects</button></a></Col>
+
           </Row>
 
 
 
 
 
-
-
-          <Row style={{ backgroundColor: "", padding: "20px", margin: "0" }}>
-
+          {/* IMAGES ROW ----------*/}
+          <Row style={{ backgroundColor: "blue", padding: "20px", margin: "0" }}>
 
 
 
 
-            <Col style={{ textAlign: "center", backgroundColor: "red", margin: "0", padding: "0", position: "relative", height: "" }}>
-
-
-              <Image className={imageClass} src={source} alt="alt" height={400} width={400} layout="fixed"></Image>
-
-
+            {/* left */}
+            <Col style={{ textAlign: "center", backgroundColor: "red", padding: "0", position: "relative", height: "" }}>
+              <Image className={imageClass} src={source} alt="alt" height={500} width={425} layout="fixed"></Image>
             </Col>
 
 
 
 
 
-
-            <Col style={{ backgroundColor: "" }}>
-
-
+            {/* right */}
+            <Col style={{ backgroundColor: "", padding:"0"}}>
 
 
-              <Row style={{ margin: "0", backgroundColor: "blue", height: "50%" }}>
+              <Row style={{ margin: "0", backgroundColor: "orange", height: "50%" }}>
 
+
+
+              
                 <Row style={{ margin: "0", padding: "0" }}>
-                  <h2 style={{ backgroundColor: "green", padding: "10px", margin: "0", fontSize:"1.5vw" }}>Commerical & Industrial Insulation Specialists</h2>
+
+                  <h2 style={{ backgroundColor: "green", padding: "0px", margin: "0", fontSize: "1.5vw", textAlign:"center" }}>
+                    Commerical & Industrial Insulation Specialists
+                  </h2>
+                
                 </Row>
-                <Row style={{ margin: "0", padding: "0" }}>
-                  <p style={{ backgroundColor: "pink", padding: "10px", margin: "0", fontSize:".8vw" }}>Our friendly professionals are true experts in the field, all of whom are dedicated to providing the highest customer service when completing a job.        We ensure that your mechanical system is insulated in the most efficient manner, and we guarantee satisfaction in each project completion. When you are ready to outfit your mechanical, commercial, or industrial insulation, trust the team at Breeding Insulation in Chattanooga. Call (423) 698-8019 today for your free quote.</p>
+
+
+
+                <Row style={{ margin: "auto", padding: "10px", backgroundColor:"black" }}>
+
+                  <p style={{ backgroundColor: "pink", padding: "0", margin: "0", fontSize: "calc(3px + .8vw)" }}>
+                    Our friendly professionals are true experts in the field, all of whom are dedicated to providing the highest customer service when completing a job. We satisfaction in each project completion. When you are ready to outfit your mechanical, commercial, or industrial insulation, trust the team at Breeding Insulation in Chattanooga. Call (423) 698-8019 today for your free quote.
+                  </p>
+                
                 </Row>
+
+                
+
 
               </Row>
 
@@ -329,18 +344,11 @@ export default function Home() {
 
 
               <Row style={{ backgroundColor: "white", margin: "0", padding: "0", height: "50%" }}>
-
-
                 {/*---- 4 image grid --------*/}
-
                 <Col style={{ backgroundColor: "white", padding: "0" }}>
-
                   {names.map((name, key) => (
                     <div style={{ backgroundColor: "", float: 'left', position: "relative", height: "50%", width: "25%" }}>
-
-
                       <div className={styles.imageContainer}>
-
                         <Image
                           onMouseEnter={() => onMouseEnter(name)}
                           className={styles.myImage}
@@ -348,24 +356,15 @@ export default function Home() {
                           alt="alt"
                           layout="fill"
                         ></Image>
-
                       </div>
-
-
                     </div>
                   ))}
-
                 </Col>
-
-
-                {/* <Col style={{ backgroundColor: "purple", margin: "auto", textAlign: "center", padding: "0" }}>
-                  <a href="/projects"><button style={{ padding: "20px", margin: "auto" }}>View all Projects</button></a>
-                </Col> */}
-
               </Row>
 
-            </Col>
 
+
+            </Col>
 
 
 
@@ -375,7 +374,7 @@ export default function Home() {
 
 
 
-        </Col>
+        </div>
 
 
 
