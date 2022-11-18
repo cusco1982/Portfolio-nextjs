@@ -222,22 +222,9 @@ transition: .25s ease-in;
   opacity: .2;
 }
 
-/* animation change w/ toggle better? */
 
-/* @-webkit-keyframes blackWhiteFade {  
-  0% { background-color: white; }
-  50% { background-color: black; }
-  100% { background-color: white; }
-}
-.blinkdiv {
-    height: 100px;
-    background-color: black;
-  -webkit-animation-name: blackWhiteFade;
-  -webkit-animation-iteration-count: 2;  
-  -webkit-animation-duration: 2s; 
-}    */
 
-/* transition delay? */
+
 
 
 
@@ -245,8 +232,10 @@ transition: .25s ease-in;
 .projectContainer{
   padding: 0;
   margin: 0;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   background-color: black;
+  padding-top: 80px;
+  /* padding-bottom: 40px; */
 }
 
 
@@ -257,7 +246,11 @@ transition: .25s ease-in;
 }
 
 
-
+.galleryRight{
+  padding: 0;
+  width: 50%;
+  /* background-color: black; */
+}
 
 
 
@@ -266,9 +259,19 @@ transition: .25s ease-in;
 
 
   .projectContainer > div{
-    width: 70vw;
+    width: 65vw;
   }
 
+
+
+
+  .galleryRight{
+    padding: 0;
+    width: 50%;
+  }
+
+
+  
 
 
 }
