@@ -73,7 +73,7 @@ const Toolbar = () => {
 
 
 
-          <Col lg="2" className="d-lg-none d-md-none" style={{ backgroundColor: "", display: "flex" }}>
+          <Col lg="2" className={styles.burgercolumn}>
 
 
             <div className={show === false ? styles.burgerContainer : styles.burgerContainerActive}>

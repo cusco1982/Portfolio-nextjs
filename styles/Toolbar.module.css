@@ -227,14 +227,16 @@
 
 
 
+.burgercolumn{
+    display: none;
+}
 
 
 
 
 
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1415px) {
     .navlinks{
         display: none;
     }
@@ -242,27 +244,26 @@
     .phoneLink{
         display: none;
     }
+
+.burgercolumn{
+    display: flex;
+}
 }
 
 
 
-@media (min-width:769px) and (max-width:1700px) {
+@media (min-width: 1416px) and (max-width: 1700px) {
 
 
     .navbrand{
         width: 20%;
-
-
     }
 
     .navlinks {
         width: 60%;
-
-
     }
 
     .phoneLink{
         width: 20%;
-
     }
 }
