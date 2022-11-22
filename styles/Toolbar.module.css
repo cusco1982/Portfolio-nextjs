@@ -5,7 +5,8 @@
     top: 0;
     width: 100%;
     z-index: 10;
-    
+    box-shadow: 0px 0px 10px 0px;
+
 }
 
 
@@ -30,14 +31,15 @@
 
 
 .navbrand {
-    /* background-color: pink; */
+    background-color: pink;
     margin: auto;
+    width: calc(100%/3);
 }
 
 
 .navbrand div{
     display: inline-block;
-    /* background-color: red; */
+    background-color: red;
 }
 
 
@@ -64,9 +66,12 @@
 
 
 .navlinks {
-    /* background-color: yellow; */
+    background-color: yellow;
     margin: auto;
     padding: 0;
+    width: calc(100%/3);
+
+
 }
 
 .navlinks div{
@@ -111,11 +116,14 @@
 .phoneLink{
     background-color: blue;
     margin: auto;
+    width: calc(100%/3);
+
 }
 
 .phoneLink div{
     text-align: right;
-    background-color: white;
+    background-color: orange;
+    padding-right: 40px;
 }
 
 .phoneLink div a{
@@ -148,16 +156,6 @@
 
 
 
-
-@media screen and (max-width: 768px) {
-    .navlinks{
-        display: none;
-    }
-    
-    .phoneLink{
-        display: none;
-    }
-}
 
 
 
@@ -224,4 +222,47 @@
 
     padding: 10px;
     border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navlinks{
+        display: none;
+    }
+    
+    .phoneLink{
+        display: none;
+    }
+}
+
+
+
+@media (min-width:769px) and (max-width:1700px) {
+
+
+    .navbrand{
+        width: 20%;
+
+
+    }
+
+    .navlinks {
+        width: 60%;
+
+
+    }
+
+    .phoneLink{
+        width: 20%;
+
+    }
 }
