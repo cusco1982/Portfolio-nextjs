@@ -19,8 +19,6 @@
     padding: 0;
     background-color: white;
     /* height: 100px; */
-   
-
 }
 
 
@@ -50,8 +48,8 @@
     font-size: 50px;
     text-decoration: none;
     display: flex;    
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     transition: 1s ease-out;
 }
 
@@ -61,9 +59,6 @@
     text-decoration: none;
     display: flex;    
     transition: 1s ease-in;
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
-
 }
 
 
@@ -100,7 +95,7 @@
     margin: 2px;
 }
 
-.navLinks{
+.navlinks div div a{
     font-weight: 500;
     text-decoration: none;
     /* background-color: black; */

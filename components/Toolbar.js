@@ -45,7 +45,6 @@ const Toolbar = () => {
 
 
 
-        {/* className={`header ${small ? "small" : ""}`}> */}
 
           <div className={styles.navbrand}>
             <div>
