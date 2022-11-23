@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 // import Head from 'next/head'
 import { useRouter } from 'next/router';
 
@@ -14,12 +14,21 @@ import styles from "../styles/Toolbar.module.css";
 const Toolbar = () => {
 
 
+  const router = useRouter();
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const router = useRouter();
+  const [small, setSmall] = useState(false);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setSmall(window.pageYOffset > 200)
+      );
+    }
+  }, []);
+
 
 
 
@@ -36,11 +45,11 @@ const Toolbar = () => {
 
 
 
-
+        {/* className={`header ${small ? "small" : ""}`}> */}
 
           <div className={styles.navbrand}>
             <div>
-              <a href="/">
+              <a href="/" className={small ? styles.small : styles.brandLogo}>
                 <div style={{ color: "blue", letterSpacing: "-2px" }}>WJ</div>
                 <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "8px" }}>Best</div>
                 <div style={{ color: "black", letterSpacing: "-1px", marginLeft: "2px" }}>Insulation</div>
