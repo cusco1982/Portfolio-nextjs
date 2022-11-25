@@ -81,7 +81,7 @@ const Toolbar = () => {
 
 
 
-          <Col lg="2" className={styles.burgercolumn}>
+          <Col className={styles.burgercolumn}>
 
 
             <div className={show === false ? styles.burgerContainer : styles.burgerContainerActive}>

@@ -33,6 +33,7 @@
     background-color: pink;
     margin: auto;
     width: calc(100%/3);
+    
 }
 
 
@@ -81,6 +82,8 @@
     margin: auto;
     padding: 0;
     width: calc(100%/3);
+    transition: 1s ease-in-out;
+
 
 
 }
@@ -88,6 +91,7 @@
 .navlinks div{
     /* background-color: red; */
     display: flex;
+
 }
 
 .navlinks div div{
@@ -173,22 +177,31 @@
 
 .burgercolumn{
     display: none;
+    /* background-color: red; */
+
 }
 
 .burgerContainer{
     background-color: blue;
     margin: auto;
     transition: 1s;
+    margin-right: 80px;
+    
+
 }
 
 .burgerContainerActive{
     background-color: white;
     margin: auto;
+    margin-right: 80px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     transition: 1s ease all;
     /* background-attachment: fixed; */
     background-position: center;
+    
+
+    
 }
 
 
@@ -248,9 +261,17 @@
 
 @media screen and (max-width: 1415px) {
 
+    .navbrand div{
+        background-color: blue;
+    }
+
 
     .navlinks{
-        display: none;
+        /* display: none; */
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s ease-in-out;
+
     }
     
     .phoneLink{
@@ -273,6 +294,9 @@
 
     .navlinks {
         width: 55%;
+        transition: 1s ease-in-out;
+
+
     }
 
     .phoneLink{
