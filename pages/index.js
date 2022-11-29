@@ -100,7 +100,7 @@ export default function Home() {
         a = 1;
       }
     });
-  });
+  }, []);
 
 
 

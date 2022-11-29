@@ -5,8 +5,15 @@
     top: 0;
     width: 100%;
     z-index: 10;
-    box-shadow: 0px 0px 10px 0px;
+    /* box-shadow: 0px 0px 10px 0px; */
+}
 
+.smallNavComp{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 0px;
 }
 
 
@@ -17,8 +24,17 @@
 
     margin: 0 !important;
     padding: 0;
-    background-color: white;
+    /* background-color: blue; */
+
     /* height: 100px; */
+    border-bottom: 1px solid red;
+}
+
+.smallNavContainer{
+    margin: 0 !important;
+    padding: 0;
+    background-color: white;
+    transition: 1s ease;
 }
 
 
@@ -30,7 +46,7 @@
 
 
 .navbrand {
-    background-color: pink;
+    /* background-color: pink; */
     margin: auto;
     width: calc(100%/3);
     
@@ -39,7 +55,7 @@
 
 .navbrand div{
     display: inline-block;
-    background-color: red;
+    /* background-color: red; */
 
 }
 
@@ -52,9 +68,14 @@
     padding-top: 5px;
     padding-bottom: 5px;
     transition: 1s ease-out;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid red;
 }
 
-.small{
+
+
+.smallLogo{
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     text-decoration: none;
@@ -78,27 +99,21 @@
 
 
 .navlinks {
-    background-color: yellow;
+    /* background-color: black; */
     margin: auto;
     padding: 0;
     width: calc(100%/3);
     transition: 1s ease-in-out;
-
-
-
+    text-transform: uppercase;
 }
-
 .navlinks div{
     /* background-color: red; */
     display: flex;
-
 }
-
 .navlinks div div{
     /* background-color: white; */
     margin: 2px;
 }
-
 .navlinks div div a{
     font-weight: 500;
     text-decoration: none;
@@ -108,12 +123,42 @@
     padding-top: 10px;
     padding-bottom: 10px;
     transition: .5s all ease;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid transparent;
     /* border-radius: 15px; */
+    color: white;
+}
+.navlinks div div a:hover{
+    /* background-color: red; */
+    border-bottom: 1px solid white;
 }
 
-.navlinks div div a:hover{
-    background-color: white;
+
+
+.smallNavLinks{
+    margin: auto;
+    padding: 0;
+    width: calc(100%/3);
+    transition: 1s ease-in-out;
+    text-transform: uppercase;
+}
+.smallNavLinks div{
+    display: flex;
+}
+.smallNavLinks div div{
+    margin: 2px;
+}
+.smallNavLinks div div a{
+    font-weight: 500;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: .5s all ease;
+    border-bottom: 1px solid transparent;
+    color: black;
+}
+.smallNavLinks div div a:hover{
     border-bottom: 1px solid black;
 }
 
@@ -122,27 +167,19 @@
 
 
 
-
-
-
-
-
-
 .phoneLink{
-    background-color: blue;
+    /* background-color: blue; */
     margin: auto;
     width: calc(100%/3);
     
 
 }
-
 .phoneLink div{
     text-align: right;
-    background-color: orange;
+    /* background-color: orange; */
     padding-right: 40px;
 }
-
-.phoneLink div a{
+.phoneLinkTag{
     /* background-color: #617f97; */
     text-decoration: none;
     padding-top: 15px;
@@ -151,17 +188,33 @@
     padding-right: 25px;
     border-radius: 25px;
     transition: 0.2s ease-in;
+    color: white;
+    border: 1px solid red;
+}
+.smallPhoneLinkTag{
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    transition: 0.2s ease-in;
     color: black;
-    border: 1px solid white;
+    border: 1px solid transparent;
 }
-
-.phoneLink div a:hover{
+.phoneLinkTag:hover{
     /* background-color: black; */
-    border: 1px solid black;
-    /* color: white; */
+    border: 1px solid white;
+    color: white;
 }
-
 .phoneLink div a b{
+    font-weight: 600;
+    margin-left: 10px;
+}
+.smallPhoneLinkTag:hover {
+    border: 1px solid blue;
+}
+.smallPhoneLinkTag b{
     font-weight: 600;
     margin-left: 10px;
 }
@@ -171,14 +224,10 @@
 
 
 
-
-
-
-
 .burgercolumn{
     display: none;
-    /* background-color: red; */
-
+    /* background-color: white; */
+    /* border-left: 1px solid red; */
 }
 
 .burgerContainer{
@@ -186,7 +235,7 @@
     margin: auto;
     transition: 1s;
     margin-right: 80px;
-    
+    padding: 10px;
 
 }
 
@@ -259,11 +308,11 @@
 
 
 
-@media screen and (max-width: 1415px) {
+@media screen and (max-width: 1515px) {
 
-    .navbrand div{
-        background-color: blue;
-    }
+    /* .navbrand div{
+        background-color: orange;
+    } */
 
 
     .navlinks{
@@ -271,7 +320,11 @@
         visibility: hidden;
         opacity: 0;
         transition: 1s ease-in-out;
-
+    }
+    .smallNavLinks{
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s ease-in-out;
     }
     
     .phoneLink{
@@ -285,7 +338,7 @@
 
 
 
-@media (min-width: 1416px) and (max-width: 1700px) {
+@media (min-width: 1516px) and (max-width: 1700px) {
 
 
     .navbrand{
@@ -295,8 +348,10 @@
     .navlinks {
         width: 55%;
         transition: 1s ease-in-out;
-
-
+    }
+    .smallNavLinks{
+        width: 55%;
+        transition: 1s ease-in-out;
     }
 
     .phoneLink{
