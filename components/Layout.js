@@ -2,7 +2,7 @@ import Toolbar from './Toolbar.js'
 import Footer from './Footer.js';
 import styles from '../styles/Layout.module.css';
 import React, { useEffect } from 'react';
-
+// import Background from "../photos/istock.jpg"
 
 
 
@@ -19,11 +19,12 @@ const Layout = ({ children }) => {
 
 
 
+    // <div style={{backgroundImage: "url(../photos/istock.jpg)"}}>
 
 
     return (
 
-        <>
+        <div className={styles.Layout}>
 
 
             <Toolbar/>
@@ -37,7 +38,7 @@ const Layout = ({ children }) => {
             <Footer />
 
 
-        </>
+        </div>
 
     )
 }

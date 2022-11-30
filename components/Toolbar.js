@@ -52,8 +52,8 @@ const Toolbar = () => {
             <div>
               <a href="/" className={small ? styles.smallLogo : styles.brandLogo}>
                 <div style={{ color: "blue", letterSpacing: "-2px" }}>WJ</div>
-                <div style={{ color: "white", letterSpacing: "-1px", marginLeft: "8px" }}>Best</div>
-                <div style={{ color: "white", letterSpacing: "-1px", marginLeft: "10px" }}>Insulation</div>
+                <div className={small ? styles.smallLogoTitle : styles.logoTitle}>Best</div>
+                <div className={small ? styles.smallLogoTitle : styles.logoTitle}>Insulation</div>
               </a>
             </div>
           </div>
@@ -65,7 +65,7 @@ const Toolbar = () => {
               <Col><a href="/">Home</a></Col>
               <Col><a href="/services">Services</a></Col>
               <Col><a href="/projects">Gallery</a></Col>
-              <Col><a href="/contact">Contact Us</a></Col>
+              <Col><a href="/contact">Contact</a></Col>
               <Col><a href="/quote">Get a Quote</a></Col>
             </div>
           </div>
@@ -87,6 +87,7 @@ const Toolbar = () => {
 
 
             <div className={show === false ? styles.burgerContainer : styles.burgerContainerActive}>
+            {/* <div className={ small ? styles.smallBurgerContainer : styles.burgerContainer}> */}
               <div className={show === false ? styles.burgerIcon : styles.burgerActive} onClick={handleShow} title="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
               </div>

@@ -47,8 +47,10 @@ export default function Home() {
 
   const [imageClass, setClass] = React.useState(styles.currentImage);
 
-  const onMouseEnter = (name) => {
 
+
+
+  const onMouseEnter = (name) => {
     if (name != source) {
       function resolveAfter2Seconds() {
         return new Promise(resolve => {
@@ -58,7 +60,6 @@ export default function Home() {
           }, 250);
         });
       }
-
       async function asyncCall() {
         const result = await resolveAfter2Seconds();
         console.log(result);
@@ -69,9 +70,6 @@ export default function Home() {
     }
     //  else{return;}
   }
-
-
-
 
 
 
@@ -172,7 +170,7 @@ export default function Home() {
 
 
 
-        <Col lg="3" style={{ backgroundColor: "blue", padding: "0", marginLeft: "20px", position: "" }}>
+        <Col lg="3" style={{ backgroundColor: "", padding: "0", marginLeft: "20px", position: "" }}>
 
           <Introslider />
 
