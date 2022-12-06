@@ -21,7 +21,7 @@ function Introslider() {
                     // layout="fill"
                     fluid={true}
                     className="d-block w-100"
-                    style={{height:"50vh"}}
+                    style={{height:"500px"}}
                     // src={armaflex}
                     src="https://www.celebritycruises.com/blog/content/uploads/2021/02/alaska-mountains-hero-denali-1920x890.jpg"
                     alt="First slide"
@@ -40,7 +40,7 @@ function Introslider() {
                 <Image
                     fluid={true}
                     // layout="fill"
-                    style={{height:"50vh"}}
+                    style={{height:"500px"}}
                     className="d-block w-100"
                     src="https://img.uhdpaper.com/wallpaper/anime-girl-art-652@0@f-thumb.jpg?dl"
                     alt="Second slide"
@@ -52,7 +52,7 @@ function Introslider() {
             <Carousel.Item interval={10000}>
                 <Image
                     fluid={true}
-                    style={{height:"50vh"}}
+                    style={{height:"500px"}}
                     // layout="fill"
                     className="d-block w-100"
                     src="https://cdn.mos.cms.futurecdn.net/TPbXrbKxUtvyVWL9hk6VYb-1920-80.jpg.webp"

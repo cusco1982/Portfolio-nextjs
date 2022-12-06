@@ -34,23 +34,32 @@
 
 
 .Layout{
-position: relative;
+  position: relative;
 }
 
+
+
 .Layout:after{
-  background-image: url(https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+
+  /* background-image: url(https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+  /* background-image: url(); */
+  background-image: url("https://api.time.com/wp-content/uploads/2015/12/151210-world-trade-center-11.jpg");
+
+
   background-repeat: no-repeat ;
+
+  background-size: cover;
   /* background-size: contain; */
-  /* position: relative; */
   background-position: center ;
   background-attachment: fixed;
   display: block;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  content: '';
+  
   z-index: -1;
   opacity: .8;
 
