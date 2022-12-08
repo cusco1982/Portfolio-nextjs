@@ -146,7 +146,7 @@ export default function Home() {
 
       {/* About us INTRO --------------------------------------------------------------------------------------------------------------------- */}
 
-      <Row style={{ backgroundColor: "whitesmoke", padding: "0", marginBottom: "", justifyContent: "center", maxHeight: "" }}>
+      <Row style={{ backgroundColor: "white", padding: "0", marginBottom: "", justifyContent: "center", maxHeight: "" }}>
 
 
 
@@ -299,8 +299,8 @@ export default function Home() {
 
 
               {/* left */}
-              <Col style={{ textAlign: "", backgroundColor: "", padding: "0", position: "relative", height: "" }}>
-                <Image src={source} alt="alt" height={560} width={420} layout="fixed"></Image>
+              <Col style={{ textAlign: "left", backgroundColor: "", padding: "0", position: "relative", height: "" }}>
+                <Image src={source} alt="alt" height={600} width={500} layout="fixed"></Image>
               </Col>
 
 
