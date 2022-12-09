@@ -157,7 +157,8 @@ transition: .25s ease-in;
   padding: 0;
   margin: 0;
   /* margin-top: 60px; */
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: whitesmoke;
   padding-top: 80px;
   /* padding-bottom: 40px; */
 }
@@ -167,6 +168,8 @@ transition: .25s ease-in;
   padding: 0px;
   margin: auto;
   width: 80vw;
+  background-color:white;
+  border: 1px solid black;
 }
 
 
@@ -178,12 +181,12 @@ transition: .25s ease-in;
 
 
 
-@media screen and (min-width: 1500px) {
+@media screen and (max-width: 1500px) {
 
 
 
   .projectContainer > div{
-    width: 65vw;
+    width: 90vw;
   }
 
 
