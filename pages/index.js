@@ -125,7 +125,7 @@ export default function Home() {
 
 
       {/* jumbotron ------------*/}
-      <Row className={styles.jumboBackground} style={{ height: "60vh", backgroundColor: "black", textAlign: "center" }}>
+      <Row className={styles.jumboBackground}>
         <div style={{ margin: "auto", color: "white" }}>
 
           <h1>New Jersey's</h1>
@@ -270,82 +270,82 @@ export default function Home() {
 
 
 
-        <Row className={styles.projectContainer}>
+      <Row className={styles.projectContainer}>
 
 
-          <div>
-
-
-
-
-            {/* OUR PROJECTS ROW -----*/}
-            <Row style={{ backgroundColor: "", margin: "0", paddingLeft: "20px", paddingRight: "20px", paddingTop: "40px", paddingBottom: "30px" }}>
-              <Col style={{ backgroundColor: "", display: "flex", margin: "auto", padding: "0" }}><h1 style={{ backgroundColor: "", margin: "0" }}>Our projects</h1></Col>
-              <Col style={{ backgroundColor: "", display: "flex", margin: "auto", padding: "0", justifyContent: "end" }}><a href="/projects"><button style={{ fontSize: "20px", padding: "5px" }}>View all projects</button></a></Col>
-            </Row>
+        <div>
 
 
 
 
-            {/* IMAGES ROW ----------*/}
-            <div style={{ backgroundColor: "", padding: "20px", margin: "0", display: "flex" }}>
+          {/* OUR PROJECTS ROW -----*/}
+          <Row style={{ backgroundColor: "", margin: "0", paddingLeft: "20px", paddingRight: "20px", paddingTop: "40px", paddingBottom: "30px" }}>
+            <Col style={{ backgroundColor: "", display: "flex", margin: "auto", padding: "0" }}><h1 style={{ backgroundColor: "", margin: "0" }}>Our projects</h1></Col>
+            <Col style={{ backgroundColor: "", display: "flex", margin: "auto", padding: "0", justifyContent: "end" }}><a href="/projects"><button style={{ fontSize: "20px", padding: "5px" }}>View all projects</button></a></Col>
+          </Row>
 
 
-              {/* left */}
-              <Col style={{ textAlign: "left", backgroundColor: "", padding: "0", position: "relative", height: "" }}>
-                <Image src={source} alt="alt" height={600} width={500} layout="fixed"></Image>
-              </Col>
 
-              {/* right */}
-              <div className={styles.galleryRight}>
-                <Row style={{ margin: "0", backgroundColor: "", height: "50%" }}>
-                  <Row style={{ margin: "0", padding: "0" }}>
-                    <h2 style={{ backgroundColor: "", padding: "0", margin: "0", fontSize: "calc(12px + .8vw)", paddingBottom: "30px", textAlign: "" }}>
-                      Commerical & Industrial Insulation Specialists
+
+          {/* IMAGES ROW ----------*/}
+          <div style={{ backgroundColor: "", padding: "20px", margin: "0", display: "flex" }}>
+
+
+            {/* left */}
+            <Col style={{ textAlign: "left", backgroundColor: "", padding: "0", position: "relative", height: "" }}>
+              <Image src={source} alt="alt" height={600} width={500} layout="fixed"></Image>
+            </Col>
+
+            {/* right */}
+            <div className={styles.galleryRight}>
+              <Row style={{ margin: "0", backgroundColor: "", height: "50%" }}>
+                <Row style={{ margin: "0", padding: "0" }}>
+                  <h2 style={{ backgroundColor: "", padding: "0", margin: "0", fontSize: "calc(12px + .8vw)", paddingBottom: "30px", textAlign: "" }}>
+                    Commerical & Industrial Insulation Specialists
                     </h2>
-                  </Row>
-                  <Row style={{ margin: "0", padding: "0", backgroundColor: "", height: "100%" }}>
-                    <p style={{ backgroundColor: "", paddingBottom: "40px", margin: "0", fontSize: "calc(3px + .8vw)", paddingLeft: "0", paddingRight: "0", lineHeight: "1.8em" }}>
-                      Our friendly professionals are true experts in the field, all of whom are dedicated to providing the highest customer service when completing a job. We satisfaction in each project completion. When you are ready to outfit your mechanical, commercial, or industrial insulation, trust the team at Breeding Insulation in Chattanooga. Call (423) 698-8019 today for your free quote.
+                </Row>
+                <Row style={{ margin: "0", padding: "0", backgroundColor: "", height: "100%" }}>
+                  <p style={{ backgroundColor: "", paddingBottom: "40px", margin: "0", fontSize: "calc(3px + .8vw)", paddingLeft: "0", paddingRight: "0", lineHeight: "1.8em" }}>
+                    Our friendly professionals are true experts in the field, all of whom are dedicated to providing the highest customer service when completing a job. We satisfaction in each project completion. When you are ready to outfit your mechanical, commercial, or industrial insulation, trust the team at Breeding Insulation in Chattanooga. Call (423) 698-8019 today for your free quote.
                     </p>
-                  </Row>
                 </Row>
+              </Row>
 
-                <Row style={{ backgroundColor: "", margin: "0", padding: "0", height: "50%" }}>
-                  {/*---- 4 image grid --------*/}
-                  <Col style={{ backgroundColor: "", padding: "0" }}>
-                    {names.map((name, key) => (
-                      <div style={{ backgroundColor: "", float: 'left', position: "relative", height: "50%", width: "25%" }}>
-                        <div className={styles.imageContainer}>
-                          <Image
-                            onMouseEnter={() => onMouseEnter(name)}
-                            className={styles.myImage}
-                            key={key} src={name}
-                            alt="alt"
-                            layout="fill"
-                          ></Image>
-                        </div>
+              <Row style={{ backgroundColor: "", margin: "0", padding: "0", height: "50%" }}>
+                {/*---- 4 image grid --------*/}
+                <Col style={{ backgroundColor: "", padding: "0" }}>
+                  {names.map((name, key) => (
+                    <div style={{ backgroundColor: "", float: 'left', position: "relative", height: "50%", width: "25%" }}>
+                      <div className={styles.imageContainer}>
+                        <Image
+                          onMouseEnter={() => onMouseEnter(name)}
+                          className={styles.myImage}
+                          key={key} src={name}
+                          alt="alt"
+                          layout="fill"
+                        ></Image>
                       </div>
-                    ))}
-                  </Col>
-                </Row>
-              </div>
-
-
+                    </div>
+                  ))}
+                </Col>
+              </Row>
             </div>
-
 
 
           </div>
 
 
 
-        </Row>
+        </div>
+
+
+
+      </Row>
 
 
 
 
-<div style={{backgroundColor:"whitesmoke"}}>
+      <div style={{ backgroundColor: "whitesmoke" }}>
 
 
 
@@ -378,7 +378,9 @@ export default function Home() {
         </Row>
 
 
-        </div>
+
+
+      </div>
 
 
 
